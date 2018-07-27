@@ -1,0 +1,48 @@
+// general styles for the project that wouldn't be a reuseable component
+
+.overview {
+  $nav-color: #3f4a1e;
+  .banner__bg { background-color: darken($nav-color,8); }
+  .site-nav--banner { background-color: rgba($nav-color,.66); }
+  .site-nav--banner .site-nav__link.is-current { background-color: rgba(darken($nav-color,3),.66); }
+  .no-touch & .site-nav--banner .site-nav__link:hover { background-color: rgba(darken($nav-color,6),.85); }
+}
+
+.stuttgart {
+  $nav-color: #3d313e;
+  .banner__bg { background-color: darken($nav-color,8); }
+  .site-nav--banner { background-color: rgba($nav-color,.5); }
+  .site-nav--banner .site-nav__link.is-current { background-color: rgba(darken($nav-color,3),.66); }
+  .no-touch & .site-nav--banner .site-nav__link:hover { background-color: rgba(darken($nav-color,6),.85); }
+}
+
+.explore {
+  $nav-color: #3f3b5d;
+  .banner__bg { background-color: darken($nav-color,8); }
+  .site-nav--banner { background-color: rgba($nav-color,.5); }
+  .site-nav--banner .site-nav__link.is-current { background-color: rgba(darken($nav-color,3),.66); }
+  .no-touch & .site-nav--banner .site-nav__link:hover { background-color: rgba(darken($nav-color,6),.85); }
+}
+
+.flights {
+  $nav-color: #393554;
+  .banner__bg { background-color: darken($nav-color,8); }
+  .site-nav--banner { background-color: rgba($nav-color,.66); }
+  .site-nav--banner .site-nav__link.is-current { background-color: rgba(darken($nav-color,3),.66); }
+  .no-touch & .site-nav--banner .site-nav__link:hover { background-color: rgba(darken($nav-color,6),.85); }
+}
+
+.competition {
+  $nav-color: #61818e;
+  .site-nav--banner { background-color: rgba($nav-color,.66); }
+  .site-nav--banner .site-nav__link.is-current { background-color: rgba(darken($nav-color,3),.66); }
+  .no-touch & .site-nav--banner .site-nav__link:hover { background-color: rgba(darken($nav-color,6),.85); }
+}
+
+.offers {
+  $nav-color: #172442;
+  .banner__bg { background-color: darken($nav-color,8); }
+  .site-nav--banner { background-color: rgba($nav-color,.66); }
+  .site-nav--banner .site-nav__link.is-current { background-color: rgba(darken($nav-color,3),.66); }
+  .no-touch & .site-nav--banner .site-nav__link:hover { background-color: rgba(darken($nav-color,6),.85); }
+}

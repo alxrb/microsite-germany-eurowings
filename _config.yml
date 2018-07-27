@@ -1,0 +1,24 @@
+# Site settings
+title: Germany
+client:
+  name: German National Tourist Board
+  link: http://www.germany.travel/en/
+core-se-link: https://www.secretescapes.com/current-sales
+description: >
+  Germany is a country where cosmopolitan port cities straddle glistening rivers, where centuries-old buildings are juxtaposed with the gleaming skyscrapers around them, it offers the perfect short break for the modern traveller.
+
+# file paths
+url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
+baseurl: "/germany" # the subpath of your site, e.g. /blog/
+img:     "/germany/_assets/img"
+css:     "/germany/_assets/css"
+js:      "/germany/_assets/js"
+
+
+# Build settings
+markdown: kramdown
+exclude: [node_modules, gulpfile.js, package.json, package-lock.json, js/script.js]
+keep_files: [_assets]
+sass:
+    sass_dir: css
+    style: compressed

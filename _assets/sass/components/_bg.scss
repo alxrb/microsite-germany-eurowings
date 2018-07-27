@@ -1,0 +1,26 @@
+// background styles
+
+.bg {
+  &--white { background-color: $white; }
+  &--light {
+    background: rgb(242,245,247);
+    background: linear-gradient(90deg, rgba(242,245,247,1) 0%, rgba(255,255,255,1) 75%);
+  }
+  &--dark  { background-color: $grey-dark; }
+  &--img   { @include background-attributes; }
+  &__fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-background;
+    @include background-attributes;
+    background-color: $grey-darker;
+  }
+  &--fade {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1920px auto;
+  }
+}

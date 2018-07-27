@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include page/head.html %}
+
+  <body class="{{page.id}}">
+
+    {% include components/tracking.html %}
+
+    {% include page/header.html %}
+
+    {% include page/banner.html %}
+
+    <div class="content-spacing section-spacing">
+      {{ content }}
+    </div>
+
+    {% unless page.id == 'offers' or page.id == 'competition' or page.id == 'stuttgart' %}
+      {% include page/promo-comp.html %}
+    {% endunless %}
+
+    {% include page/footer.html %}
+
+    {% include modal/modal.html %}
+
+  </body>
+
+</html>

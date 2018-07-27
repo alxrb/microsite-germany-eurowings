@@ -1,0 +1,242 @@
+@mixin button-element-reset {
+  // resets the button element that owlCarousel insists on using
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  /* Remove excess padding and border in Firefox 4+ */
+  &::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+  }
+}
+
+$info-height: 70px;
+
+.slideshow {
+  $icon-size: 3em;
+
+  &__wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-slideshow;
+    height: 100%;
+    width: 100%;
+    background-color: $grey-dark;
+    $fade-transition-time: .66s;
+    &.is-open {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s linear 0s, opacity $fade-transition-time;
+      .mapboxgl-ctrl-attrib.mapboxgl-compact::after { display: block; }
+    }
+    &.is-closed {
+      opacity: 0;
+      visibility: hidden;
+      transition: visibility 0s linear $fade-transition-time, opacity $fade-transition-time;
+      .mapboxgl-ctrl-attrib.mapboxgl-compact::after { display: none; }
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: $icon-size;
+    width: $icon-size;
+    background-color: rgba($black,.5);
+    background-image: url('../img/icons/close.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: ($icon-size/3);
+    cursor: pointer;
+    z-index: $z-slideshow-upper;
+    transition: background-color $transition-time ease;
+    &:hover{ background-color: $black; }
+  }
+
+  &__info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content-upper;
+    height: $info-height;
+    color: $white;
+  }
+}
+
+.slideshow-disable-scroll { overflow: hidden; }
+
+.conga {
+  // couldn't think of another word for row, this is just a line of content with
+  // specific behaviour for certain items
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  &__left { width: 40%; }
+  &__center { width: 20%; }
+  &__right { width: 40%; }
+}
+
+.border-top { border-top: 1px solid rgba($white,.5); }
+
+// .slider {
+//   position: relative;
+//   height: 100%;
+//   height: calc(100% - #{$info-height + 2});
+//   color: $white;
+//   overflow: hidden;
+//   &__content {
+//     height: 100%;
+//     height: calc(100% - #{$info-height + 2});
+//     @include background-attributes;
+//     @include transition;
+//   }
+  // &__info {
+  //   position: absolute;
+  //   left: $margin;
+  //   right: $margin;
+  //   bottom: 0;
+  //   z-index: $z-content-upper;
+  //   height: $info-height;
+  //   pointer-events: none;
+  //   @include bp(xxxlarge){
+  //     right: 0;
+  //     left: 0;
+  //   }
+  //   &-wrap {
+  //     border-top: 1px solid $white-5;
+  //   }
+  // }
+  // &__info-right,
+  // &__info-left {
+  //   position: absolute;
+  //   top: 0;
+  //   z-index: $z-content-upper;
+  //   height: $info-height;
+  //   line-height: $info-height;
+  //   pointer-events: all;
+  // }
+  // &__info-right { right: 0; }
+  // &__info-left {
+  //   left: 0;
+  //   padding-right: 3.5em;
+  // }
+//   &__location {
+//     &:before {
+//       content: "";
+//       display: inline-block;
+//       height: 1.5em;
+//       width: 1.05em;
+//       margin-right: .5em;
+//       margin-bottom: .4em;
+//       vertical-align: middle;
+//       background-image: url( "../img/icons/map-pin-white.png" );
+//       background-position: center;
+//       background-repeat: no-repeat;
+//       background-size: 100%;
+//       background-size: contain;
+//       .svg & { background-image: url( "../img/icons/map-pin-white.svg" ); }
+//     }
+//   }
+// }
+//
+
+
+// reseting all of the owl-carousel styles. also using the classes it gives everything
+.owl-carousel {
+  position: relative;
+  height: 100% !important;
+  div:not(.owl-dots):not(.owl-dot) {
+ 		height: 100% !important;
+ 	}
+}
+.owl-dots {
+  position: absolute;
+  bottom: 0;
+  z-index: $z-content-upper;
+  display: block;
+  height: $info-height;
+  width: 100%;
+  text-align: center;
+  line-height: $info-height;
+  // background-image: url('../img/bg/slider-gradient.png');
+  // background-repeat: repeat-x;
+}
+
+.owl-dot {
+  @include button-element-reset;
+  $dot-size: 10px;
+  display: none;
+  height: $dot-size;
+  width: $dot-size;
+  background-color: rgba($white,.5);
+  border-radius: $dot-size;
+  transition: all 1.25s ease; // same time as the slide transition in js file
+  & + & { margin-left: 12px; }
+  &.active { background-color: $white; }
+  @include bp($xl){
+    display: inline-block;
+  }
+}
+
+.owl-nav {
+  .touch & { display: none !important;} // owl-carousel inlines display:block
+  > div {
+    position: absolute;
+    top: 0;
+    width: 20%;
+    min-width: 120px;
+    max-width: 300px;
+    text-indent: -9999em;
+    line-height: 0;
+    opacity: 0;
+    @include transition;
+    &:hover { opacity: 1; }
+    &:after{
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black,.25);
+      @include background-attributes;
+      background-size: 2.5em;
+    }
+  }
+  .owl-next {
+    right: 0;
+    &:after {
+      right: 0;
+      background-image: url('../img/icons/arrow-right.svg');
+    }
+  }
+  .owl-prev {
+    left: 0;
+    &:after {
+      left: 0;
+      background-image: url('../img/icons/arrow-left.svg');
+    }
+  }
+}
+
+
+
+
+

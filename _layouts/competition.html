@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include page/head.html %}
+
+  <body class="{{page.id}}">
+
+    {% include components/tracking.html %}
+
+    {% include page/header.html %}
+
+    <div class="bg--fade" style="background-image: url('{{site.img}}/content/competition/bg.jpg'); background-color: #1d2013;">
+      <div class="site-header__offset"></div>
+      {% include nav/site.html theme="banner" %}
+      <div class="content-spacing">
+        <div class="container">
+          <div class="width width--xl text--center">
+            <div class="space--xxxxl"></div>
+            <div class="space--lg"></div>
+            <h1 class="title title--xxxl text--white">{{page.title}}</h1>
+            <div class="space--lg"></div>
+            <a href="#entry-form" class="btn btn--lg btn--red">Enter Now</a>
+            <div class="space--xxxxl"></div>
+            <div class="width width--xl bg--white boxpad--xl text--xl">
+              <p>{{page.intro}}</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ipsam ipsa rerum quas dolor dignissimos, hic, maxime, necessitatibus assumenda repellendus illum architecto accusantium omnis eius rem dolore magnam. Quia, nostrum.</p>
+            </div>
+            <div class="space--xxxl"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="width width--xxl">
+            {% for feature in page.features %}
+              <div class="row row--valign-center{% unless forloop.first %} space--xl{% endunless %}">
+                <div class="col col--5">
+                  <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');"></div>
+                </div>
+                <div class="col col--7 text--white">
+                  <h2 class="title title--xl">{{feature.title}}</h2>
+                  <p class="text--normal">{{feature.description}}</p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="space--xxxl"></div>
+        </div>
+
+        <div id="entry-form" class="bg--white vpad--xxxl text--center">
+          <div class="container">
+            <h3 class="title title--md">Enter below for your chance to win</h3>
+            <div class="space--lg"></div>
+            <div class="width width--lg">
+              <iframe src="{{page.entry-form.url}}" width="100%" height="{{page.entry-form.height}}"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include page/footer.html %}
+
+  </body>
+
+</html>
