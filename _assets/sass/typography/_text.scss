@@ -2,19 +2,20 @@
 
 .text {
   // sizes
-  &--xxl { font-size: 1.2rem; line-height: 1.6; letter-spacing: 0; }
-  &--xl  { font-size: 1.1rem; line-height: 1.6; letter-spacing: 0; }
-  &--lg  { font-size: 1.05rem; letter-spacing: 0; }
-  &--sm  { font-size: .8rem; }
+  &--xxl { font-size: 1.26rem; line-height: 1.6; letter-spacing: 0; }
+  &--xl  { font-size: 1.18rem; line-height: 1.6; letter-spacing: 0; }
+  &--lg  { font-size: 1.1rem; letter-spacing: 0; }
+  &--sm  { font-size: .92rem; }
 
   // styles
   &--italic       { font-style: italic; }
   &--light        { font-weight: 300; }
   &--normal       { font-weight: 400; }
-  &--bold         { font-weight: 600; }
-  &--bolder       { font-weight: 700; }
-  &--wide-kern    { letter-spacing: .25em; }
-  &--wide-kern-lg { letter-spacing: .5em; }
+  &--bold         { font-weight: 500; }
+  &--bolder       { font-weight: 600; }
+  &--boldest      { font-weight: 700; }
+  &--wide-kern    { letter-spacing: .15em; }
+  &--wide-kern-lg { letter-spacing: .3em; }
   &--upper        { text-transform: uppercase; }
 
   // colours

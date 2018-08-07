@@ -7,48 +7,74 @@ title: Overview
 map: true
 
 banner:
-  content: >
-    <div class="text--center">
-      <h2 class="overview-sub-title">Explore</h2>
-      <h1 class="overview-title">Germany</h1>
-      <div class="space--xs"></div>
-      <a class="btn btn--lg btn--white js-open-slideshow">Start Photo tour</a>
-    </div>
+  title-sup: Explore
+  title: Germany
+
+intro: >
+  <p class="text--xxl">Germany is a country where cosmopolitan port cities straddle glistening rivers, where centuries-old buildings are juxtaposed with the gleaming skyscrapers around them, it offers the perfect short break for the modern traveller.</p>
+  <p class="text--lg">Quietly beautiful, inspiring and diverse; to truly discover Germany is to scratch the surface of those picture-perfect cities and challenge your preconceptions. You might (and should) expect beautiful architecture and pretty market squares, but look further and find a burgeoning modern food scene, some of the finest beer in the world, serene parks and landscapes, thriving communities of creatives and a multitude of galleries and museums.</p>
+
+stuttgart:
+  intro: >
+    <p class="text--xxl">A city of palaces and vineyards, high art and Swabian delights. Stuttgart is our German destination in focus. Discover it here... </p>
+
+
+
+map:
+  - title: Munich
+    position: "top: 88%; left: 63%;"
+    link: explore#munich
+  - title: Berlin
+    position: "top: 33%; left: 86%;"
+    link: explore#berlin
+  - title: Cologne
+    position: "top: 52%; left: 25%;"
+    link: explore#cologne
+  - title: Düsseldorf
+    position: "top: 48%; left: 11%;"
+    link: explore#dusseldorf
+  - title: Hamburg
+    position: "top: 21%; left: 45%;"
+    link: explore#hamburg
+  - title: Hannover
+    position: "top: 37%; left: 41%;"
+    link: explore#hannover
+  - title: Stuttgart
+    position: "top: 82%; left: 34%;"
+    link: stuttgart
+
 ---
 
 <div class="vpad--xxl">
   <div class="container">
     <div class="width width--xl text--center">
-      <p class="text--xxl">{{site.description}}</p>
-      <p>Quietly beautiful, inspiring and diverse; to truly discover Germany is to scratch the surface of those picture-perfect cities and challenge your preconceptions. You might (and should) expect beautiful architecture and pretty market squares, but look further and find a burgeoning modern food scene, some of the finest beer in the world, serene parks and landscapes, thriving communities of creatives and a multitude of galleries and museums.</p>
+      {{page.intro}}
     </div>
   </div>
 </div>
 
-<div class="bg--light vpad--xxl">
+<div class="bg--grey-lightest vpad--xxl">
   <div class="container">
     <div class="text--center">
-      <h4 class="sub-title">Our featured German city</h4>
-      <h3 class="bold-title">Stuttgart</h3>
+      <h4 class="title title--xxxs text--upper text--wide-kern text--bold">Our featured German city</h4>
+      <div class="space--sm"></div>
+      <h3 class="title title--xxxl text--bolder">Stuttgart</h3>
     </div>
     <div class="width width--xxl vpad--md">
-      <div class="video js-youtube-thumbnail js-autoplay" id="video-overview" data-thumbnail-img="{{site.img}}/content/overview/video.jpg">
-        <iframe class="video__iframe" src='https://www.youtube.com/embed/xxxxxxxxx?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen="allowfullscreen"></iframe>
+      <div class="js-open-modal bg-img bg-img--16-9" data-modal-item="video" style="background-image: url({{site.img}}/content/overview/video.jpg);">
+        <div class="bg-img__content">
+          <div class="bg-img__play">
+            <img src="{{site.img}}/icons/play.svg" alt="Play" width="100%">
+          </div>
+        </div>
       </div>
     </div>
     <div class="width width--xl text--center">
-      <p class="text--xxl">Intro explaining focus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eaque sapiente quis veritatis quod aspernatur esse eos placeat, accusantium molestiae necessitatibus sint! Rem ipsam at eaque, perferendis necessitatibus sapiente, corporis distinctio, recusandae blanditiis consequuntur quo aliquid fuga hic architecto dignissimos officiis molestias ratione cupiditate maxime deserunt consectetur tenetur ea accusantium explicabo. Et maxime rerum ratione, veritatis reprehenderit atque dolores similique corporis quae recusandae at, nostrum necessitatibus eveniet. Praesentium soluta sit blanditiis ipsa! Voluptate delectus animi, accusamus dignissimos.</p>
+      {{page.stuttgart.intro}}
       <div class="space--md"></div>
       <a href="{{site.baseurl}}/stuttgart" class="btn btn--red">See more Stuttgart</a>
     </div>
   </div>
 </div>
 
-<div class="vpad--xxl">
-  <div class="container">
-    <div class="width width--lg text--center text--xl">
-      <p>Map promo section</p>
-      <a class="btn btn--lg btn--red js-open-map">open the map</a>
-    </div>
-  </div>
-</div>
+{% include modal/slideshow.html %}

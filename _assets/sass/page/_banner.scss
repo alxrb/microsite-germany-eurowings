@@ -26,6 +26,8 @@
     justify-content: center;
     overflow: hidden;
     @include page-padding;
+    & .btn { pointer-events: all; }
+    .banner--map & { pointer-events: none; }
   }
   &__bg {
     position: absolute;
@@ -36,19 +38,8 @@
     z-index: $z-content;
     background-color: $grey-dark;
     @include background-attributes;
-    // &:before {
-    //   // optional colour overlay on bg image
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   right: 0;
-    //   bottom: 0;
-    //   background-color: rgba($black,.15);
-    // }
   }
   &__nav {
-    // optional container for navigation include
     position: absolute;
     right: 0;
     left: 0;
@@ -59,4 +50,124 @@
       bottom: auto;
     }
   }
+
+
+
+  //=========================================
+  // MAP
+
+  &__map {
+    display: none;
+    &-btn.btn { display: none; }
+  }
+  @include bp($xxl){
+    &__map {
+      position: absolute;
+      top: 0; left: 0;
+      bottom: 0; right: 0;
+      z-index: 1;
+      display: block;
+      &-wrap {
+        position: relative;
+        height: 100%;
+      }
+      // sized and positioned map for pins to be placed
+      &-frame {
+        @include transition();
+        z-index: 5;
+        max-width: 560px;
+        width: 66.667%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: $s2;
+        @include bp($md){ right: $s4; }
+        &:before {
+          content: "";
+          display: block;
+          width: 100%;
+          padding-top: 135.706%;
+        }
+        &__bg {
+          @include transition();
+          z-index: 0;
+          position: absolute;
+          top: 0; left: 0;
+          bottom: 0; right: 0;
+          background-image: url('../img/content/overview/map.png');
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          opacity: 0.5;
+          .map--active & {
+            opacity: 0.8;
+          }
+        }
+      }
+      // map pins
+      &-icon {
+        position: absolute;
+        z-index: 1;
+        &__icon {
+          @include transition();
+          $icon-width: 38px;
+          $icon-height: 47px;
+          position: absolute;
+          display: block;
+          top: -$icon-height;
+          left: -$icon-width/2;
+          height: $icon-height;
+          width: $icon-width;
+          background-image: url(../img/icons/map-pin-red.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          transform-origin: bottom center;
+        }
+        &-lufthansa &__icon { background-image: url(../img/icons/map-pin-lufthansa.svg); }
+        .map--active &__icon { transform: scale(1.1); }
+        &:hover &__icon { transform: scale(1.33); }
+        &__label {
+          @include transition();
+          display: block;
+          width: 160px;
+          position: absolute;
+          top: 100%;
+          left: -80px;
+          padding-top: 0;
+          text-align: center;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          font-size: $s0;
+          opacity: 0;
+          pointer-events: none;
+        }
+        &:hover &__label {
+          pointer-events: all;
+          padding: 0.5em;
+          opacity: 1;
+          text-shadow: 0 0 10px rgba($grey-darkest,0.5);
+        }
+      }
+      // Gradient overlay behind map frame element
+      &-overlay {
+        @include transition();
+        position: absolute;
+        top: 0; bottom: 0; right: 0;
+        display: block;
+        width: 40%;
+        opacity: 0.3;
+        background: linear-gradient(90deg,rgba($grey-darkest,0) 0,rgba($grey-darkest,1) 50%);
+        .map--active & {
+          width: 75%;
+          opacity: 0.6;
+        }
+      }
+      &-btn.btn {
+        pointer-events: all;
+        display: inline-block;
+      }
+    } //end __map
+  }
+
 }

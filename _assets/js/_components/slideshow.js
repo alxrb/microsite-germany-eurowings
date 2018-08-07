@@ -1,0 +1,106 @@
+
+
+///////////////////////////////////////
+//      open slideshow modal
+///////////////////////////////////////
+
+$('.js-open-slideshow').on('click', function(e) {
+  e.preventDefault();
+  // disable scrolling on background content (doesn't work iOS)
+  $('body').addClass('slideshow-disable-scroll');
+  runSlideshow();
+  $('.slideshow__wrap').removeClass('is-closed').addClass('is-open');
+})
+
+function slideshowClose(e){
+  e.preventDefault();
+  // enable scrolling on background content
+  $('body').removeClass('slideshow-disable-scroll');
+  $('.slideshow__wrap').removeClass('is-open').addClass('is-closed');
+}
+
+$('.js-close-slideshow').click(function(){ slideshowClose(event); });
+
+// closes modal on escape key press
+$(document).keyup(function(event) {
+  if (event.keyCode == 27) {
+    slideshowClose(event);
+  }
+});
+
+
+///////////////////////////////////////
+//  Home Image slider - extra fucntions
+///////////////////////////////////////
+
+function runSlideshow() {
+
+  var homeCarousel      = $('#slideshow');
+  var transitionSpeed   = 1250;
+  var carouselLink      = $('.js-slideshow-link');
+  var carouselLocation  = $('.js-slideshow-location');
+  var activeSlide       = $('.owl-item.active > .slider__content');
+  var hiddenElements    = '.slider__info, .owl-nav, .owl-dots';
+
+  homeCarousel.owlCarousel({
+    items:1,
+    loop:true,
+    autoHeight:true,
+    dotsContainer: ".dots-container",
+    nav: true,
+    navElement: "div",
+    navSpeed: transitionSpeed,
+    smartSpeed: transitionSpeed,
+    dragEndSpeed: (transitionSpeed / 3),
+    callbacks:true
+  });
+
+  // This grabs the slide information from the data attributes to update the link
+  // and location name for each slide.
+  function sliderContentRefresh(){
+    var currentLink     = $('.owl-item.active > .slideshow__item').data('link'),
+        currentLocation = $('.owl-item.active > .slideshow__item').data('location');
+    carouselLink.attr('href', currentLink);
+    carouselLocation.text(currentLocation);
+  }
+
+  // the callbacks for the owlCarousel plugin are a bit crap and dont fire after
+  // the animation. Also if you do two drags in a row, it is very easy to break.
+  // This interval fires every half second to check the active class. I know its
+  // gross, but its the most reliable way to write this code. And its a small
+  // amount of processing every half second.
+  setInterval(function() {
+    if ($('.owl-item').hasClass('active')) {
+      sliderContentRefresh();
+    }
+  }, 500);
+
+  // starts to automatically cycle through slides
+  // owlCarousel autoplay start stop events dont work. This is an alternate way
+  // to make it auto advance and then stop when the user interacts with it
+  var fauxAutoplay = setInterval(function() {
+    homeCarousel.trigger('next.owl.carousel');
+  }, (transitionSpeed*2.5));
+  homeCarousel.on('click',function() {
+    clearInterval(fauxAutoplay);
+  });
+
+  // keyboard nav for the active carousel
+  $(document.documentElement).keyup(function (event) {
+    if (event.keyCode == 37) {  // left key press
+      homeCarousel.trigger('prev.owl.carousel');
+      clearInterval(fauxAutoplay);
+    } else if (event.keyCode == 39) {  // right key press
+      homeCarousel.trigger('next.owl.carousel');
+      clearInterval(fauxAutoplay);
+    }
+  });
+
+  // stop carousel autoplaying, if dragged
+  homeCarousel.on('dragged.owl.carousel', function(event) {
+    clearInterval(fauxAutoplay);
+  });
+
+}
+
+

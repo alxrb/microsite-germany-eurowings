@@ -1,0 +1,20 @@
+
+
+- id: map
+  type: map
+  pages:
+    - id: stuttgart
+
+
+- id: slideshow
+  type: slideshow
+  pages:
+    - id: overview
+
+
+- title: Local
+  id: local
+  type: text
+  content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue.
+  pages:
+  - id: stuttgart

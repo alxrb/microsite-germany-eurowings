@@ -5,10 +5,37 @@ title: Flights
 nav: true
 nav-order: 4
 content-pages: true
-intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptates, consectetur porro! Eligendi, hic saepe temporibus deleniti ducimus repellendus minus quod itaque, similique. Velit tenetur quae, aut fugiat atque facilis.
+
+banner:
+  title: Flights
+  title-sub: with Eurowings
+
+intro: >
+  <p class="text--xl">Eurowings is your essential airline for reaching the best destinations in Germany.</p>
+  <p class="text--xl">Offering comfort and convenience, Eurowings fly to seven German cities from airports across the UK. With a range of cabin classes set to offer economy and luxury, all that’s left to do is choose where your next getaway in Germany will take you...</p>
+
+features:
+
+  - id: basic
+    title: BASIC
+    title-sub: The budget fare
+    content: If it’s just the flight you’re after, only pay for the flight! Luggage, refreshments and more can all be purchased as add-ons, saving you money and allowing you to purchase just the essentials.
+
+  - id: smart
+    title: SMART
+    title-sub: The perfect flight companion
+    content: The smartest choice for leisure and business travellers. This low-cost standard fare includes numerous services and can be tailored to meet your personal requirements by booking additional services. Luggage, preferred seating, refreshments and more are all included.
+
+  - id: bizclass
+    title: BIZclass
+    title-sub: The premium ticket
+    content: First-class service awaits, making any flight with Eurowings unforgettable. With lounge access, extra luggage allowance, speedy boarding and much more, this ticket is for savvy travellers who expect only the best service and convenience.
+
+
 ---
 
-<div class="bg--light vpad--xxl">
+
+<div class="vpad--xxl">
   <div class="container">
     <div class="width width--lg text--center text--xl">
       <p>{{page.intro}}</p>
@@ -16,34 +43,25 @@ intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident volup
   </div>
 </div>
 
-<div class="vpad--xxl">
+
+
+<div class="vpad--xxl bg--grey-lightest">
   <div class="container">
-    <div class="bob">
+
+    {% for feature in page.features %}
+    <div class="bob{% cycle '', ' bob--swap' %}">
       <div class="bob__img">
         <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
       </div>
       <div class="bob__text">
-        <div class="title title--md">Lorem ipsum dolor sit amet, consectetur.</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quam minus facere, sunt sed quaerat voluptatum fuga natus amet tempora, nesciunt dolorem fugit ipsam suscipit voluptate cupiditate obcaecati asperiores ipsum, animi dolores soluta recusandae fugiat veritatis! Adipisci numquam, corrupti temporibus!</p>
+        <h3 class="title title--xl text--bold">{{feature.title}}</h3>
+        <div class="space--xxs"></div>
+        <h3 class="title title--xxs text--bold text--upper">{{feature.title-sub}}</h3>
+        <div class="space--xs"></div>
+        <p>{{feature.content}}</p>
       </div>
     </div>
-    <div class="bob bob--swap">
-      <div class="bob__img">
-        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-      </div>
-      <div class="bob__text">
-        <div class="title title--md">Nobis maxime sequi qui voluptas dolorum!</div>
-        <p>Quia, debitis, itaque. Quas, voluptates, dolore. Placeat sint culpa, delectus quidem. Earum excepturi repellat adipisci fugiat animi quibusdam iure ea rem asperiores odio aliquid vero expedita inventore accusamus dolor exercitationem, non magni eveniet! Velit possimus culpa perferendis beatae facere praesentium.</p>
-      </div>
-    </div>
-    <div class="bob">
-      <div class="bob__img">
-        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-      </div>
-      <div class="bob__text">
-        <div class="title title--md">Beatae officiis facilis doloremque animi illum.</div>
-        <p>Nesciunt consectetur maxime possimus accusamus est, eius earum deserunt omnis modi distinctio? Facere dolorum, deserunt quidem tempore dolore ad, labore qui praesentium et nihil, neque quasi! Voluptatum magnam sapiente earum aut officiis, atque iusto, totam. Necessitatibus iste eius obcaecati perspiciatis.</p>
-      </div>
-    </div>
+    {% endfor %}
+
   </div>
 </div>

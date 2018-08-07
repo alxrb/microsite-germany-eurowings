@@ -2,7 +2,6 @@
 
 .bg-img {
   // Vertically centered content in bg-image
-  background-color: $grey-dark;
   @include transition;
   &__link {
     position: absolute;
@@ -23,9 +22,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     color: $white;
     text-align: center;
-    @include page-padding;
   }
   &__bg-overlay {
     position: absolute;
@@ -38,4 +37,13 @@
     @include transition;
   }
   &:hover &__bg-overlay { background-color: rgba($black,.6); }
+
+  &__play {
+    @include transition;
+    width: 160px; height: 160px;
+    display: inline-block;
+    transform: scale(1);
+  }
+  &:hover &__play { transform: scale(1.05); }
+
 }

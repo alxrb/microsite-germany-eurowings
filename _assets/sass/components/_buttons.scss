@@ -21,6 +21,9 @@
   &--orange { background-color: $orange;
     &:hover { background-color: $orange-dark; }
   }
+  &--solid { background-color: $g-red;
+    &:hover { background-color: darken($g-red,10); }
+  }
   &--red { background-color: $g-red;
     &:hover { background-color: darken($g-red,10); }
   }

@@ -1,17 +1,17 @@
 // general styles for the project that wouldn't be a reuseable component
 
 .overview {
-  $nav-color: #3f4a1e;
+  $nav-color: #3d313e;
   .banner__bg { background-color: darken($nav-color,8); }
-  .site-nav--banner { background-color: rgba($nav-color,.66); }
+  .site-nav--banner { background-color: rgba($nav-color,.5); }
   .site-nav--banner .site-nav__link.is-current { background-color: rgba(darken($nav-color,3),.66); }
   .no-touch & .site-nav--banner .site-nav__link:hover { background-color: rgba(darken($nav-color,6),.85); }
 }
 
 .stuttgart {
-  $nav-color: #3d313e;
+  $nav-color: #3f4a1e;
   .banner__bg { background-color: darken($nav-color,8); }
-  .site-nav--banner { background-color: rgba($nav-color,.5); }
+  .site-nav--banner { background-color: rgba($nav-color,.66); }
   .site-nav--banner .site-nav__link.is-current { background-color: rgba(darken($nav-color,3),.66); }
   .no-touch & .site-nav--banner .site-nav__link:hover { background-color: rgba(darken($nav-color,6),.85); }
 }
@@ -46,3 +46,37 @@
   .site-nav--banner .site-nav__link.is-current { background-color: rgba(darken($nav-color,3),.66); }
   .no-touch & .site-nav--banner .site-nav__link:hover { background-color: rgba(darken($nav-color,6),.85); }
 }
+
+
+
+
+
+/*====================================
+  Stuttgart
+  ----------------------------------*/
+
+.stuttgart-intro {
+  background-position: center top;
+}
+
+.local {
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 3px 3px 30px rgba($black,0.1);
+  overflow: hidden;
+  &__image {
+    position: relative;
+    color: $white;
+    text-align: center;
+  }
+  &__avatar {
+    width: 70px;
+  }
+  &__content {
+    padding: 1.5em;
+  }
+}
+
+
+
+
