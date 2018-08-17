@@ -160,6 +160,13 @@ $modaltransition-distance: 4em;
   }
 }
 
+.modal--aiport {
+  color: #fff;
+  background-color: #3f464c;
+  background-image: url('../img/content/promo-eurowings-bg.jpg');
+  @include background-attributes;
+}
+
 /*=====================================
   MODAL CAROUSEL - if .modal--carousel
 =====================================*/

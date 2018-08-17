@@ -1,17 +1,3 @@
-
-
-- id: map
-  type: map
-  pages:
-    - id: stuttgart
-
-
-- id: slideshow
-  type: slideshow
-  pages:
-    - id: overview
-
-
 - title: Local
   id: local
   type: text

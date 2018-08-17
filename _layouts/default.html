@@ -8,12 +8,8 @@
     {% include components/tracking.html %}
 
     {% include page/header.html %}
-    
-    {% if page.id == 'overview'%}
-      {% include page/banner-overview.html %}
-    {% else %}
-      {% include page/banner.html %}
-    {% endif %}
+
+    {% include page/banner.html %}
 
     <div class="content-spacing section-spacing">
       {{ content }}
@@ -24,6 +20,14 @@
     {% endunless %}
 
     {% include page/footer.html %}
+
+    {% if page.id == 'overview' %}
+      {% include modal/slideshow.html %}
+    {% endif %}
+
+    {% if page.map %}
+      {% include modal/map.html %}
+    {% endif %}
 
     {% include modal/modal.html %}
 

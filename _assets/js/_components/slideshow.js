@@ -1,8 +1,9 @@
-
-
 ///////////////////////////////////////
 //      open slideshow modal
 ///////////////////////////////////////
+
+// global variable for the slide content refresh interval. Needed to stop interval when slideshow is closed
+var checkSlideContent;
 
 $('.js-open-slideshow').on('click', function(e) {
   e.preventDefault();
@@ -17,6 +18,7 @@ function slideshowClose(e){
   // enable scrolling on background content
   $('body').removeClass('slideshow-disable-scroll');
   $('.slideshow__wrap').removeClass('is-open').addClass('is-closed');
+  clearInterval(checkSlideContent);
 }
 
 $('.js-close-slideshow').click(function(){ slideshowClose(event); });
@@ -35,12 +37,13 @@ $(document).keyup(function(event) {
 
 function runSlideshow() {
 
-  var homeCarousel      = $('#slideshow');
-  var transitionSpeed   = 1250;
-  var carouselLink      = $('.js-slideshow-link');
-  var carouselLocation  = $('.js-slideshow-location');
-  var activeSlide       = $('.owl-item.active > .slider__content');
-  var hiddenElements    = '.slider__info, .owl-nav, .owl-dots';
+  var homeCarousel     = $('#slideshow');
+  var transitionSpeed  = 250;
+  var slideSpeed       = 3000;
+  var carouselLink     = $('.js-slideshow-link');
+  var carouselLocation = $('.js-slideshow-location');
+  var activeSlide      = $('.owl-item.active > .slider__content');
+  var hiddenElements   = '.slider__info, .owl-nav, .owl-dots';
 
   homeCarousel.owlCarousel({
     items:1,
@@ -49,19 +52,25 @@ function runSlideshow() {
     dotsContainer: ".dots-container",
     nav: true,
     navElement: "div",
-    navSpeed: transitionSpeed,
-    smartSpeed: transitionSpeed,
-    dragEndSpeed: (transitionSpeed / 3),
+    navSpeed: (transitionSpeed + 500),
+    smartSpeed: (transitionSpeed + 500),
+    dragEndSpeed: transitionSpeed,
     callbacks:true
   });
 
   // This grabs the slide information from the data attributes to update the link
   // and location name for each slide.
   function sliderContentRefresh(){
-    var currentLink     = $('.owl-item.active > .slideshow__item').data('link'),
-        currentLocation = $('.owl-item.active > .slideshow__item').data('location');
-    carouselLink.attr('href', currentLink);
-    carouselLocation.text(currentLocation);
+    var slideLink       = $('.owl-item.active > .slideshow__item').data('link');
+    var slideLocation   = $('.owl-item.active > .slideshow__item').data('location');
+    var currentLink     = $(carouselLink).attr('href');
+    var currentLocation = $(carouselLocation).text();
+    // is the content already correct?
+    if (currentLink !== slideLink && currentLocation !== slideLocation) {
+      // change the content to the correct content
+      carouselLink.attr('href', slideLink);
+      carouselLocation.text(slideLocation);
+    }
   }
 
   // the callbacks for the owlCarousel plugin are a bit crap and dont fire after
@@ -69,10 +78,8 @@ function runSlideshow() {
   // This interval fires every half second to check the active class. I know its
   // gross, but its the most reliable way to write this code. And its a small
   // amount of processing every half second.
-  setInterval(function() {
-    if ($('.owl-item').hasClass('active')) {
-      sliderContentRefresh();
-    }
+  checkSlideContent = setInterval(function() {
+    sliderContentRefresh();
   }, 500);
 
   // starts to automatically cycle through slides
@@ -80,7 +87,7 @@ function runSlideshow() {
   // to make it auto advance and then stop when the user interacts with it
   var fauxAutoplay = setInterval(function() {
     homeCarousel.trigger('next.owl.carousel');
-  }, (transitionSpeed*2.5));
+  }, (slideSpeed));
   homeCarousel.on('click',function() {
     clearInterval(fauxAutoplay);
   });
@@ -102,5 +109,3 @@ function runSlideshow() {
   });
 
 }
-
-

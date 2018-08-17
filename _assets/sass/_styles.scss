@@ -1,11 +1,11 @@
 // general styles for the project that wouldn't be a reuseable component
 
 .overview {
-  $nav-color: #3d313e;
-  .banner__bg { background-color: darken($nav-color,8); }
+  $nav-color: #152f10;
+  .banner__bg { background-color: darken($nav-color,2); }
   .site-nav--banner { background-color: rgba($nav-color,.5); }
   .site-nav--banner .site-nav__link.is-current { background-color: rgba(darken($nav-color,3),.66); }
-  .no-touch & .site-nav--banner .site-nav__link:hover { background-color: rgba(darken($nav-color,6),.85); }
+  .no-touch & .site-nav--banner .site-nav__link:hover { background-color: rgba(darken($nav-color,1),.85); }
 }
 
 .stuttgart {

@@ -37,7 +37,7 @@
           {% for feature in page.features %}
           <div class="bob {% cycle '', 'bob--swap' %}">
 
-            <div class="bob__img bg-img bg-img--16-9" style="background-image: url('{{site.img}}/img.jpg');"></div>
+            <div class="bob__img bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{feature.id}}.jpg');"></div>
 
             <div class="bob__text text--white">
               <h2 class="title title--xl">{{feature.title}}</h2>

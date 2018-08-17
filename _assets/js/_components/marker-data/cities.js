@@ -4,19 +4,7 @@ var cityMarkers = {
     {
       "type": "Feature",
       "properties": {
-        "title": "Stuttgart"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          9.182932100000016,
-          48.7758459
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
+        "id": "dusseldorf",
         "title": "Düsseldorf"
       },
       "geometry": {
@@ -30,6 +18,7 @@ var cityMarkers = {
     {
       "type": "Feature",
       "properties": {
+        "id": "cologne",
         "title": "Cologne"
       },
       "geometry": {
@@ -43,6 +32,7 @@ var cityMarkers = {
     {
       "type": "Feature",
       "properties": {
+        "id": "munich",
         "title": "Munich"
       },
       "geometry": {
@@ -56,6 +46,7 @@ var cityMarkers = {
     {
       "type": "Feature",
       "properties": {
+        "id": "hamburg",
         "title": "Hamburg"
       },
       "geometry": {
@@ -69,6 +60,7 @@ var cityMarkers = {
     {
       "type": "Feature",
       "properties": {
+        "id": "berlin",
         "title": "Berlin"
       },
       "geometry": {
@@ -82,6 +74,7 @@ var cityMarkers = {
     {
       "type": "Feature",
       "properties": {
+        "id": "hannover",
         "title": "Hannover"
       },
       "geometry": {

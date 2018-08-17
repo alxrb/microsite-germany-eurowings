@@ -1,0 +1,47 @@
+- id: dusseldorf
+  title: Düssel&shy;dorf
+  description: Glistening post-modern buildings and a sleek, smart set of locals affirm Düsseldorf’s business credentials – with luxury shopping and dining to complement. Yet along the Rhine, the chocolate-box old town still remains the favourite spot to unwind with a classic Altbier.
+  link: http://www.germany.travel/en/towns-cities-culture/towns-cities/duesseldorf.html
+  airport:
+    title: Düsseldorf International Airport
+    link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/DUS.html
+
+- id: cologne
+  title: Cologne
+  description: Gothic spires reach far into the sky in this historical, yet thoroughly contemporary, west German powerhouse. Let your jaw drop at the gothic masterpiece of Cologne Cathedral, before heading to a waterside Rhine bar for a classic Kölsch and a day exploring great museums and galleries.
+  link: http://www.germany.travel/en/towns-cities-culture/towns-cities/cologne.html
+  airport:
+    title: Cologne / Bonn Airport
+    link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/CGN.html
+
+- id: munich
+  title: Munich
+  description: At around a third of the size of Berlin, Bavaria’s capital city is walkable, laid-back and spilling over with charm and traditional architecture. Munich is small enough to explore in a long weekend, and with a plethora of designer boutiques and award-winning dining spots, this photogenic city offers style and substance in equal measure.
+  link: http://www.germany.travel/en/towns-cities-culture/towns-cities/munich.html
+  airport:
+    title: Munich Airport
+    link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/MUC.html
+
+- id: hamburg
+  title: Hamburg
+  description: A wonderfully liberal harbour town, Hamburg is a northern bastion of progressive cool in a landscape of harbour cranes and waterside modernism. Vibrant neighbourhoods and a multicultural foodie scene, plus an acclaimed music scene, makes Hamburg a destination for those in-the-know.
+  link: http://www.germany.travel/en/towns-cities-culture/towns-cities/hamburg.html
+  airport:
+    title: Hamburg Airport
+    link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/HAM.html
+
+- id: berlin
+  title: Berlin
+  description: One of Europe’s finest cities, Berlin makes for a remarkably unique city break. From quirky brunch spots to bohemian bars, discover both east and west with a fascinating history that laid the foundation for one artsy, hip and irresistable city.
+  link: http://www.germany.travel/en/towns-cities-culture/towns-cities/berlin.html
+  airport:
+    title: Berlin Tegel Airport
+    link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/TXL.html
+
+- id: hannover
+  title: Hannover
+  description: Walk the cobbled streets of the chocolate box old town, delight at the neo-classical marvel of the Opera House, or walk the serene Herrenhausen Gardens. Hanover is a little-known gem; flea markets on the river, the hip Linden neighbourhood, and pilsners at the water’s edge.
+  link: http://www.germany.travel/en/towns-cities-culture/towns-cities/hannover.html
+  airport:
+    title: Hannover Airport
+    link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/HAJ.html

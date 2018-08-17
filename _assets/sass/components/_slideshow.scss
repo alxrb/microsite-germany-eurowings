@@ -18,8 +18,8 @@
   -webkit-appearance: none;
   /* Remove excess padding and border in Firefox 4+ */
   &::-moz-focus-inner {
-      border: 0;
-      padding: 0;
+    border: 0;
+    padding: 0;
   }
 }
 
@@ -78,6 +78,35 @@ $info-height: 70px;
     height: $info-height;
     color: $white;
   }
+  &__item { @include background-attributes; }
+  &__location {
+    $icon-width: 15px;
+    $icon-height: 19px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: $icon-height;
+    &:before {
+      content: '';
+      display: inline-block;
+      height: $icon-height;
+      width: $icon-width;
+      margin-right: $s-3;
+      background-image: url('../img/icons/map-pin-white.svg');
+      background-size: $icon-width auto;
+      background-repeat: no-repeat;
+    }
+  }
+  &__bg-gradient {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    height: ($info-height*3);
+    $gradient-color: #141823;
+    background: linear-gradient(0deg, rgba($gradient-color,.75) 0%, rgba($gradient-color,0) 100%);
+  }
 }
 
 .slideshow-disable-scroll { overflow: hidden; }
@@ -96,69 +125,6 @@ $info-height: 70px;
 
 .border-top { border-top: 1px solid rgba($white,.5); }
 
-// .slider {
-//   position: relative;
-//   height: 100%;
-//   height: calc(100% - #{$info-height + 2});
-//   color: $white;
-//   overflow: hidden;
-//   &__content {
-//     height: 100%;
-//     height: calc(100% - #{$info-height + 2});
-//     @include background-attributes;
-//     @include transition;
-//   }
-  // &__info {
-  //   position: absolute;
-  //   left: $margin;
-  //   right: $margin;
-  //   bottom: 0;
-  //   z-index: $z-content-upper;
-  //   height: $info-height;
-  //   pointer-events: none;
-  //   @include bp(xxxlarge){
-  //     right: 0;
-  //     left: 0;
-  //   }
-  //   &-wrap {
-  //     border-top: 1px solid $white-5;
-  //   }
-  // }
-  // &__info-right,
-  // &__info-left {
-  //   position: absolute;
-  //   top: 0;
-  //   z-index: $z-content-upper;
-  //   height: $info-height;
-  //   line-height: $info-height;
-  //   pointer-events: all;
-  // }
-  // &__info-right { right: 0; }
-  // &__info-left {
-  //   left: 0;
-  //   padding-right: 3.5em;
-  // }
-//   &__location {
-//     &:before {
-//       content: "";
-//       display: inline-block;
-//       height: 1.5em;
-//       width: 1.05em;
-//       margin-right: .5em;
-//       margin-bottom: .4em;
-//       vertical-align: middle;
-//       background-image: url( "../img/icons/map-pin-white.png" );
-//       background-position: center;
-//       background-repeat: no-repeat;
-//       background-size: 100%;
-//       background-size: contain;
-//       .svg & { background-image: url( "../img/icons/map-pin-white.svg" ); }
-//     }
-//   }
-// }
-//
-
-
 // reseting all of the owl-carousel styles. also using the classes it gives everything
 .owl-carousel {
   position: relative;
@@ -176,8 +142,6 @@ $info-height: 70px;
   width: 100%;
   text-align: center;
   line-height: $info-height;
-  // background-image: url('../img/bg/slider-gradient.png');
-  // background-repeat: repeat-x;
 }
 
 .owl-dot {
@@ -203,7 +167,7 @@ $info-height: 70px;
     top: 0;
     width: 20%;
     min-width: 120px;
-    max-width: 300px;
+    max-width: 200px;
     text-indent: -9999em;
     line-height: 0;
     opacity: 0;
@@ -215,7 +179,7 @@ $info-height: 70px;
       display: block;
       width: 100%;
       height: 100%;
-      background-color: rgba($black,.25);
+      background-color: rgba($black,.4);
       @include background-attributes;
       background-size: 2.5em;
     }
@@ -235,8 +199,3 @@ $info-height: 70px;
     }
   }
 }
-
-
-
-
-

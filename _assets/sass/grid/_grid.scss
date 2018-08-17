@@ -142,6 +142,9 @@
     // default breakpoint for individual columns - saves in always writing breakpoint in classes
     @include bp($lg) { &-- { @include column-widths; } }
 
+    // constant individual columns (no breakpoint)
+    &--constant- { @include column-widths; }
+
     // columns starting at other breakpoints
     @include bp($sm) { &--sm- { @include column-widths; } }
     @include bp($md) { &--md- { @include column-widths; } }

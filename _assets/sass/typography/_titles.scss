@@ -81,11 +81,11 @@
   font-family: $font-title-01;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: .5rem;
-  font-size: $s9;
+  letter-spacing: 1rem;
+  font-size: $s10;
   line-height: 1;
   @include bp($lg){
-    font-size: $s11;
+    font-size: $s12;
   }
 }
 
@@ -100,4 +100,25 @@
     font-size: $s5;
     letter-spacing: 1rem;
   }
+}
+
+.bold-title {
+  font-family: $font-title-01;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .5rem;
+  font-size: $s8;
+  line-height: 1;
+  &--sm {
+    font-size: $s6;
+    letter-spacing: .4rem;
+  }
+}
+
+.sub-title {
+  font-family: $font-title-01;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: .4rem;
+  font-size: $s1;
 }

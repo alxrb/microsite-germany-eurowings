@@ -51,13 +51,12 @@ features:
     {% for feature in page.features %}
     <div class="bob{% cycle '', ' bob--swap' %}">
       <div class="bob__img">
-        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
+        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/{{feature.id}}.jpg');"></div>
       </div>
       <div class="bob__text">
-        <h3 class="title title--xl text--bold">{{feature.title}}</h3>
+        <h3 class="title title--xxl">{{feature.title}}</h3>
         <div class="space--xxs"></div>
-        <h3 class="title title--xxs text--bold text--upper">{{feature.title-sub}}</h3>
-        <div class="space--xs"></div>
+        <h3 class="sub-title">{{feature.title-sub}}</h3>
         <p>{{feature.content}}</p>
       </div>
     </div>

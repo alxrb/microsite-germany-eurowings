@@ -6,59 +6,31 @@ nav: true
 nav-order: 3
 content-pages: true
 intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-cities:
-
-  - id: dusseldorf
-    title: Düssel&shy;dorf
-    description: Glistening post-modern buildings and a sleek, smart set of locals affirm Düsseldorf’s business credentials – with luxury shopping and dining to complement. Yet along the Rhine, the chocolate-box old town still remains the favourite spot to unwind with a classic Altbier.
-    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/duesseldorf.html
-    flight-link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/DUS.html
-
-  - id: cologne
-    title: Cologne
-    description: Gothic spires reach far into the sky in this historical, yet thoroughly contemporary, west German powerhouse. Let your jaw drop at the gothic masterpiece of Cologne Cathedral, before heading to a waterside Rhine bar for a classic Kölsch and a day exploring great museums and galleries.
-    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/cologne.html
-    flight-link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/CGN.html
-
-  - id: munich
-    title: Munich
-    description: At around a third of the size of Berlin, Bavaria’s capital city is walkable, laid-back and spilling over with charm and traditional architecture. Munich is small enough to explore in a long weekend, and with a plethora of designer boutiques and award-winning dining spots, this photogenic city offers style and substance in equal measure.
-    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/munich.html
-    flight-link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/MUC.html
-
-  - id: hamburg
-    title: Hamburg
-    description: A wonderfully liberal harbour town, Hamburg is a northern bastion of progressive cool in a landscape of harbour cranes and waterside modernism. Vibrant neighbourhoods and a multicultural foodie scene, plus an acclaimed music scene, makes Hamburg a destination for those in-the-know.
-    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/hamburg.html
-    flight-link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/HAM.html
-
-  - id: berlin
-    title: Berlin
-    description: One of Europe’s finest cities, Berlin makes for a remarkably unique city break. From quirky brunch spots to bohemian bars, discover both east and west with a fascinating history that laid the foundation for one artsy, hip and irresistable city.
-    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/berlin.html
-    flight-link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/TXL.html
-
-  - id: hannover
-    title: Hannover
-    description: Walk the cobbled streets of the chocolate box old town, delight at the neo-classical marvel of the Opera House, or walk the serene Herrenhausen Gardens. Hanover is a little-known gem; flea markets on the river, the hip Linden neighbourhood, and pilsners at the water’s edge.
-    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/hannover.html
-    flight-link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/HAJ.html
+map: true
 ---
 
-<div class="vpad--xxl">
+<div class="stuttgart-intro" style="background-image: url('{{site.img}}/map/bg-map.jpg');">
   <div class="container">
-    <div class="width width--xl text--center text--xl">
-      <p>{{page.intro}}</p>
+    <div class="row row--valign-center">
+      <div class="col col--6">
+        <p class="text--xl">{{page.intro}}</p>
+      </div>
+      <div class="col col--6">
+        <a class="js-open-map bg-img bg-img--4-3" data-map-focus="germany" style="background-image: url('{{site.img}}/map/bg-map-overlay.png');">
+          <div class="bg-img__content">
+            <span class="btn btn--solid">Explore the map</span>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
 
-{% include nav/page.html content=page.cities %}
+{% include nav/page.html content=site.data.cities %}
 
 <div class="vpad--xxxl bg--light">
   <div class="container">
-    {% for city in page.cities %}
+    {% for city in site.data.cities %}
       <div id="{{city.id}}" class="bob {% cycle '', ' bob--swap' %}">
         <div class="bob__img">
           <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/explore/{{city.id}}/01.jpg');"></div>
@@ -72,11 +44,12 @@ cities:
           </div>
         </div>
         <div class="bob__text">
-          <h2 class="title title--sm text--bold">{{city.title}}</h2>
+          <h2 class="bold-title bold-title--sm">{{city.title}}</h2>
           <p>{{city.description}}</p>
           <div class="btn__padding">
             <a href="{{city.link}}" class="btn btn--sm btn--red">Find Out More</a> <span>&nbsp;</span>
-            <a href="{{city.flight-link}}" class="btn btn--sm btn--outline btn--outline-red">See Flights</a>
+            {% assign airport = site.data.airports | where: 'id', city.id | first %}
+            <a href="{{airport.link}}" class="btn btn--sm btn--outline btn--outline-red">See Flights</a>
           </div>
         </div>
       </div>

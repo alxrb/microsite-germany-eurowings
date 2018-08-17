@@ -11,8 +11,6 @@ intro: >
   <p class="text--xl">Stuttgart is our German destination in focus, presenting an opportunity to get under the skin of a city that offers a remarkable selection of diverse experiences.</p>
   <p class="text--lg">From high art to luxury cars, Stuttgart knows how to flaunt its wealth. Whether it’s exploring the postmodern Porsche museum, or exploring boutiques and galleries, Stuttgart wears luxury on its sleeve. Discover the vine-clad hills that surround the city, diving into rustic wine bars before heading to the centre for refined dining options. Hunt for treasures in the art nouveau market or head for the heavens with a visit to the Fernsehturm, where unparalleled panorama awaits. A city of palaces and renowned cultural institutions, Stuttgart offers traditional Swabian charms in bucket loads. Discover it here.</p>
 
-
-
 topics:
 
   - id: city-of-the-arts
@@ -21,7 +19,7 @@ topics:
       <p class="text--xl">Stuttgart is a hotbed of culture and art, with a rich heritage that embellishes the grandiose palaces and fills its many galleries with fascinating works. Yet there is also plenty of modernity, borne out of a rich industrial heritage. From renowned ballet to modernist estates, Stuttgart offers a diverse cultural map.</p>
 
     local:
-      name: Name
+      name: Firstname Surname
       content: >
         Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.
 
@@ -47,7 +45,7 @@ topics:
       <p class="text--xl">Stuttgart’s most famous export is the motor car. The iconic roundels of Mercedes-Benz and Porsche are recognised the world over and, quite remarkably, they both reside in Stuttgart. Discover a history of landmark design and engineering in the veritable home of the automobile – though of course, that’s not all that’s on offer! </p>
 
     local:
-      name: Name
+      name: Firstname Surname
       content: >
         Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.
 
@@ -73,7 +71,7 @@ topics:
       <p class="text--xl">With a crisp Riesling in one hand, a pils on order and a plate of Maultaschen gracing the table, Stuttgart is a city of gastronomic indulgence. Explore traditional beer festivals, unpick the beautiful vineyards that clad the surrounding hills, and enjoy sumptuous feasts in smart restaurants and down-to-earth eateries. </p>
 
     local:
-      name: Name
+      name: Firstname Surname
       content: >
         Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.
 
@@ -99,9 +97,15 @@ topics:
       <p class="text--xl">Whether you’re looking for unique vintage treasures or modern, boutique designs, Stuttgart offers a playground of unmissable shopping opportunities. Catch up with local producers, designers and artisans whilst packing your case with one-of-a-kind finds. </p>
 
     local:
-      name: Name
+      name: Firstname Surname
       content: >
         Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.
+
+    featured-poi:
+
+      - id: outletcity-metzingen
+        title: Outletcity Metzingen
+        description: Just a short trip from the heart of Stuttgart lies Outletcity Metzingen. In this modern, design-forward shopping village you’ll find luxury brands like Armani, Prada, Jimmy Choo and many more, offering chic wares at unmissable prices. Find your new look here and don’t miss their unique offering in our competition...
 
     pois:
 
@@ -109,27 +113,19 @@ topics:
         title: Markthalle
         description: Alight at this art nouveau market hall and fill your tote bag with an exquisite selection of local produce. Since 1927, Stuttgart Markthalle has been a centre of foodie activity, with local meats, cheeses, fruit and veg all vying for your attention. In the square outside, you’ll find a flea market every saturday, a true treasure trove for savvy vintage hunters.
 
-      - id: outletcity-metzingen
-        title: Outletcity Metzingen
-        description: Just a short trip from the heart of Stuttgart lies Outletcity Metzingen. In this modern, design-forward shopping village you’ll find luxury brands like Armani, Prada, Jimmy Choo and many more, offering chic wares at unmissable prices. Find your new look here and don’t miss their unique offering in our competition...
-
       - id: boutiques-galore
         title: Boutiques Galore
         description: Stuttgart is home to an enticing collection of independent boutiques, serving fine sartorial attire to the fashion set of the city. Discerning visitors head for treasures like Bungalow, Best., Horst Wanschura and vintage spot Smachtfetzen, looking for unique styles to complement a smart sundown outing in the city.
-
-
-
 ---
 
-
-<div class="stuttgart-intro" style="background-image: url({{site.img}}/content/{{page.id}}/bg-map.jpg);">
+<div class="stuttgart-intro" style="background-image: url('{{site.img}}/map/bg-map.jpg');">
   <div class="container">
     <div class="row row--valign-center">
       <div class="col col--6">
         {{page.intro}}
       </div>
       <div class="col col--6">
-        <a href="javascript:void(0);" class="js-open-map bg-img bg-img--4-3" style="background-image: url({{site.img}}/content/{{page.id}}/bg-map-overlay.png);">
+        <a class="js-open-map bg-img bg-img--4-3" data-map-focus="stuttgart" style="background-image: url('{{site.img}}/map/bg-map-overlay.png');">
           <div class="bg-img__content">
             <span class="btn btn--solid">Explore Stuttgart</span>
           </div>
@@ -139,17 +135,14 @@ topics:
   </div>
 </div>
 
-
 {% include nav/page.html content=page.topics %}
-
-
 
 {% for topic in page.topics %}
   <div id="{{topic.id}}" class="vpad--xxxl{% cycle '', ' bg--grey-lightest' %}">
     <div class="container">
 
-      <h2 class="title title--xxl text--bolder">{{topic.title}}</h2>
-      <div class="space--xl"></div>
+      <h2 class="title title--xxxl">{{topic.title}}</h2>
+      <div class="space--lg"></div>
 
       <div class="row">
 
@@ -158,10 +151,8 @@ topics:
         </div>
 
         <div class="col col--6">
-
-          <div class="local width width--lg {% cycle ' bg--grey-lightest', ' bg--white' %}">
+          <div class="local width width--lg bg--white">
             <div class="row row--no-gutters row--valign-center">
-
               <div class="local__image col col--4">
                 <div class="bg-img bg-img--1-1" style="background-image: url({{site.img}}/img.jpg);">
                   <div class="bg-img__content">
@@ -173,15 +164,13 @@ topics:
                   </div>
                 </div>
               </div>
-
               <div class="col col--8">
                 <div class="local__content">
                   <p>{{topic.local.content}}</p>
                   <div class="space--sm"></div>
-                  <a href="javascript:void(0);" data-modal-item="local" class="js-open-modal btn btn--sm btn--solid">Read more</a>
+                  <a data-modal-item="local" class="js-open-modal btn btn--sm btn--solid">Read more</a>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -189,13 +178,40 @@ topics:
       </div>
 
 
-      <div class="space--xl"></div>
+      {% assign amount-of-pois = topic.pois | size %}
+      {% assign featured-poi = topic.featured-poi | first %}
+
+      <div class="space--xxl"></div>
+
+      {% if featured-poi %}
+        <div class="row row--6-6 row--valign-center row--no-gutters bg--grey-darkest bg--img text--white" style="background-image: url('{{site.img}}/content/{{page.id}}/bg-outlet.jpg');">
+          <div class="col">
+            <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/stuttgart/poi/{{featured-poi.id}}.jpg');"></div>
+            <div class="row row--constant-6-6 row--no-gutters">
+              <div class="col">
+                <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/stuttgart/poi/{{featured-poi.id}}-01.jpg');"></div>
+              </div>
+              <div class="col">
+                <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/stuttgart/poi/{{featured-poi.id}}-02.jpg');"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="boxpad--lg">
+              <h3 class="title title--lg">{{featured-poi.title}}</h3>
+              <p class="text--normal">{{featured-poi.description}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="space--xxl"></div>
+      {% endif %}
+
       <div class="row row--4-4-4 row--gutters-lg">
         {% for poi in topic.pois %}
           <div class="col">
             <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/poi/{{poi.id}}.jpg');"></div>
             <div class="space--md"></div>
-            <h3 class="title title--sm text--bold">{{poi.title}}</h3>
+            <h3 class="title title--sm">{{poi.title}}</h3>
             <p>{{poi.description}}</p>
           </div>
         {% endfor %}
@@ -205,8 +221,4 @@ topics:
   </div>
 {% endfor %}
 
-
-
 {% include page/promo-eurowings.html %}
-
-{% include modal/map.html %}

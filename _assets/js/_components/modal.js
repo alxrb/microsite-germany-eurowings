@@ -23,7 +23,7 @@ function modalOpen(event, modalId){
 
     event.preventDefault();
     var modalItemID   = $(event.currentTarget).data('modal-item'),
-        modalItem = '.modal__item--' + modalItemID;
+        modalItem = '#modal--' + modalItemID;
 
     // if group create carousel modal
     if ( $(event.currentTarget).attr('data-modal-group') ) {
@@ -39,7 +39,7 @@ function modalOpen(event, modalId){
 
   } else {
     // QUERY - If modal opened from querystring
-    modalItem = '.modal__item--' + modalId;
+    modalItem = '#modal--' + modalId;
   }
 
 

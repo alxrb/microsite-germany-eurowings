@@ -1,0 +1,27 @@
+- id: dusseldorf
+  title: Düsseldorf International Airport
+  link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/DUS.html
+
+- id: cologne
+  title: Cologne / Bonn Airport
+  link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/CGN.html
+
+- id: munich
+  title: Munich Airport
+  link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/MUC.html
+
+- id: hamburg
+  title: Hamburg Airport
+  link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/HAM.html
+
+- id: berlin
+  title: Berlin Tegel Airport
+  link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/TXL.html
+
+- id: hannover
+  title: Hannover Airport
+  link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/HAJ.html
+
+- id: stuttgart
+  title: Stuttgart Airport
+  link: https://www.eurowings.com/en/booking/offers/flights-to/-DE/STR.html

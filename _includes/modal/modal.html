@@ -1,5 +1,5 @@
 
-{% assign modal-items = site.data.modal.text | concat: site.data.modal.video | concat: site.data.modal.highlights %}
+{% assign modal-items = site.data.modal.text | concat: site.data.modal.video %}
 
 <div class="js-modal modal is-closed">
   <div class="js-close-modal modal__close"></div>
@@ -9,11 +9,11 @@
 
   <div class="modal__container">
 
+    <!-- creates sandard text and video modals -->
     {% for item in modal-items %}
       {% if item.pages %}
         {% for item-page in item.pages %}
           {% if item-page.id == page.id or item-page.id == 'all' %}
-
             <div
               class="modal__item modal__item--{{item.id}} is-closed"
               id="modal-{{item.id}}"
@@ -30,12 +30,78 @@
                 {% endif %}
               </div>
             </div>
-
           {% endif %}
         {% endfor %}
       {% endif %}
     {% endfor %}
 
-  </div>
+    <!-- creates modals specifically for the map -->
+    {% if page.map %}
 
+      <!-- airport modals -->
+      {% for airport in site.data.airports %}
+        <div id="modal--airport-{{airport.id}}" class="modal__item is-closed">
+          <div class="container container--xl container--no-padding modal__content">
+            <div class="modal--aiport boxpad--xl text--center">
+              <div class="vpad--lg width width--lg">
+                {% assign this-city = site.data.cities | where: 'id', airport.id | first %}
+                <div class="sub-title">Fly to</div>
+                <div class="bold-title bold-title--sm">{{airport.title}}</div>
+                <div class="sub-title">with Eurowings</div>
+                <div class="space--xs"></div>
+                <p class="text--normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia saepe, et unde, incidunt id odio corporis illo dolorum facere voluptates, esse consequuntur autem natus sint dolor consectetur earum fugit blanditiis!</p>
+                <div class="space--md"></div>
+                <a href="{{airport.link}}" class="btn btn--purple">See Flights</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+      <!-- city modals -->
+      {% assign city-data = site.data.cities %}
+      {% for city in city-data %}
+        <div id="modal--{{city.id}}" class="modal__item is-closed">
+          <div class="container container--xl container--no-padding modal__content">
+            <div class="row row--no-gutters">
+              <div class="col col--constant-8">
+                <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/explore/{{city.id}}/01.jpg');"></div>
+              </div>
+              <div class="col col--constant-4">
+                <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/explore/{{city.id}}/02.jpg');"></div>
+                <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/explore/{{city.id}}/03.jpg');"></div>
+              </div>
+            </div>
+            <div class="boxpad--xl bg--white">
+              <span class="bold-title bold-title--sm">{{city.title}}</span>
+              <div class="space--xs"></div>
+              <p>{{city.description}}</p>
+              <div class="btn__padding">
+                <a href="{{city.link}}" class="btn btn--sm btn--red">Find Out More</a> <span>&nbsp;</span>
+                <a href="{{city.airport.link}}" class="btn btn--sm btn--outline btn--outline-red">See Flights</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+      <!-- poi modals -->
+      {% for poi in site.data.pois %}
+        <div id="modal--{{poi.id}}" class="modal__item is-closed">
+          <div class="container container--xl container--no-padding modal__content">
+            <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/map/pois/{{poi.id}}.jpg');"></div>
+            <div class="boxpad--xl bg--white">
+              <div class="title title--lg">{{poi.title}}</div>
+              <div class="space--sm"></div>
+              <p>{{poi.description}}</p>
+              <div class="space--sm"></div>
+              <a href="{{site.baseurl}}/stuttgart#{{poi.section}}" class="btn btn--outline btn--outline-red btn--sm">Read More</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+    {% endif %}
+
+  </div>
 </div>

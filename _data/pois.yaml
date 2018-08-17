@@ -1,0 +1,99 @@
+- id: old-palace
+  title: Old Palace
+  description: The oldest building in Stuttgart, dating back to the 10th century.
+  section: city-of-the-arts
+
+- id: landesmuseum-wurttemberg
+  title: Landesmuseum Württemberg
+  description: The primary history museum of the region, located in the Old Palace.
+  section: city-of-the-arts
+
+- id: ludwigsburg-palace
+  title: Ludwigsburg Palace
+  description: Dubbed the “Versailles of Swabia”, a grand palace a little out of Stuttgart.
+  section: city-of-the-arts
+
+- id: new-palace
+  title: New Palace
+  description: One of the last large city palaces in southern Germany.
+  section: city-of-the-arts
+
+- id: solitude-palace
+  title: Solitude Palace
+  description: A Rococo marvel on the edge of the city.
+  section: city-of-the-arts
+
+- id: staatstheater
+  title: Staatstheater
+  description: The home of the arts in Stuttgart.
+  section: city-of-the-arts
+
+- id: kunstmuseum
+  title: Kunstmuseum
+  description: Stuttgart’s futuristic temple of modern art.
+  section: city-of-the-arts
+
+- id: staatsgalerie
+  title: Staatsgalerie
+  description: A modernist marvel packed with contemporary art.
+  section: city-of-the-arts
+
+- id: weissenhof-estate
+  title: Weissenhof Estate
+  description: Le Corbusier's lauded modernist housing estate.
+  section: city-of-the-arts
+
+- id: porsche-museum
+  title: Porsche Museum
+  description: The home of all things Porsche.
+  section: motoring-heritage
+
+- id: mercedes-benz-museum
+  title: Mercedes-Benz Museum
+  description: The home of all things Mercedes-Benz.
+  section: motoring-heritage
+
+- id: zacke
+  title: Zacke
+  description: A rather unique form of public transport in Stuttgart.
+  section: motoring-heritage
+
+- id: cannstatter-volksfest
+  title: Cannstatter Volksfest
+  description: Stuttgart’s answer to Oktoberfest.
+  section: unique-flavours
+
+- id: stuttgarter-weinwanderweg
+  title: Stuttgarter Weinwanderweg
+  description: A wine trail through Stuttgart’s renowned vineyards.
+  section: unique-flavours
+
+- id: outletcity-metzingen
+  title: Outletcity Metzingen
+  description: A modern, design-forward shopping village.
+  section: a-shopping-destination
+
+- id: markthalle
+  title: Markthalle
+  description: Stuttgart’s central marketplace.
+  section: a-shopping-destination
+
+- id: bungalow
+  title: Bungalow
+  description: Boutique clothing store.
+  section: a-shopping-destination
+
+- id: best
+  title: Best
+  description: Boutique clothing store.
+  section: a-shopping-destination
+
+- id: horst-wanschura
+  title: Horst Wanschura
+  description: Vintage clothing store.
+  section: a-shopping-destination
+
+- id: smachtfetzen
+  title: Smachtfetzen
+  description: Boutique clothing store.
+  section: a-shopping-destination

@@ -19,8 +19,9 @@
   &--upper        { text-transform: uppercase; }
 
   // colours
-  &--white { color: $grey-lightest; }
+  &--white { color: $white; }
   &--black { color: $grey-dark; }
+  &--red   { color: $g-red; }
 
   // alignment
   &--left   { text-align: left; }
