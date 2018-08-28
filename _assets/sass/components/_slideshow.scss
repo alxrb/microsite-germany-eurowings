@@ -89,6 +89,7 @@ $info-height: 70px;
     &:before {
       content: '';
       display: inline-block;
+      flex-shrink: 0;
       height: $icon-height;
       width: $icon-width;
       margin-right: $s-3;
@@ -118,9 +119,18 @@ $info-height: 70px;
   justify-content: center;
   align-items: center;
   height: 100%;
-  &__left { width: 40%; }
-  &__center { width: 20%; }
-  &__right { width: 40%; }
+  &__left {
+    width: 50%;
+    @include bp($lg){ width: 40%; }
+  }
+  &__center {
+    width: 0%;
+    @include bp($lg){ width: 20%; }
+  }
+  &__right {
+    width: 50%;
+    @include bp($lg){ width: 40%; }
+  }
 }
 
 .border-top { border-top: 1px solid rgba($white,.5); }

@@ -33,6 +33,12 @@
     &--xs    { padding-top: $s0;  padding-bottom: $s0; }
     &--xxs   { padding-top: $s-2; padding-bottom: $s-2; }
   }
+  &--desktop {
+    &-xl { padding-top: $s5; padding-bottom: 0; }
+    @include bp($xl) {
+      &-xl { padding-top: $s6; padding-bottom: $s6; }
+    }
+  }
 }
 
 // // optional equal horizontal padding for large elements

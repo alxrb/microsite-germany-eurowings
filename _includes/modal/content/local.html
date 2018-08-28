@@ -1,0 +1,20 @@
+<div class="container container--xl container--no-padding modal--local bg--white">
+  <div class="boxpad--xxl">
+
+    <div class="row row--valign-bottom">
+      <div class="col col--8">
+        <h4 class="title title--xl">{{item.name}}</h4>
+        <h5 class="sub-title sub-title--sm">{{item.job-title}}</h5>
+      </div>
+      <div class="col col--4">
+        <div class="width--sm">
+          <div class="bg-img bg-img--1-1 bg-img--circle" style="background-image: url('{{site.img}}/content{{page.url}}local/{{item.id}}.jpg');"></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="content-spacing text--lg">
+      {{item.content}}
+    </div>
+  </div>
+</div>

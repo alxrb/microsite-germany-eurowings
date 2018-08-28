@@ -5,33 +5,39 @@ title: Explore
 nav: true
 nav-order: 3
 content-pages: true
-intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+intro: Explore Germany with Eurowings. Flying to all the below destinations from the UK, explore a land of glistening modernity and centuries-old traditions. Whether you’re looking for the harbour-cool of Hamburg or the Bavarian charms of Munich, explore Germany here.
 map: true
 ---
 
 <div class="stuttgart-intro" style="background-image: url('{{site.img}}/map/bg-map.jpg');">
   <div class="container">
-    <div class="row row--valign-center">
-      <div class="col col--6">
-        <p class="text--xl">{{page.intro}}</p>
+    <div class="row row--xl-6-6 row--valign-center row--no-gutters">
+      <div class="col">
+        <div class="vpad--desktop-xl">
+          <p class="text--xxl">{{page.intro}}</p>
+        </div>
       </div>
-      <div class="col col--6">
-        <a class="js-open-map bg-img bg-img--4-3" data-map-focus="germany" style="background-image: url('{{site.img}}/map/bg-map-overlay.png');">
-          <div class="bg-img__content">
-            <span class="btn btn--solid">Explore the map</span>
+      <div class="col">
+        <div class="width width--lg">
+          <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/map/bg-map-overlay.png');">
+            <div class="bg-img__content">
+              <a class="js-open-map btn btn--solid" data-map-focus="germany">Explore the map</a>
+            </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
+
+
 {% include nav/page.html content=site.data.cities %}
 
-<div class="vpad--xxxl bg--light">
+<div class="bg--light">
   <div class="container">
     {% for city in site.data.cities %}
-      <div id="{{city.id}}" class="bob {% cycle '', ' bob--swap' %}">
+      <div id="{{city.id}}" class="bob {% cycle '', ' bob--swap' %} {% if forloop.index == 1 %}space--xxxxl{% endif %}">
         <div class="bob__img">
           <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/explore/{{city.id}}/01.jpg');"></div>
           <div class="row row--no-gutters row--constant-6-6">
@@ -53,6 +59,7 @@ map: true
           </div>
         </div>
       </div>
+      {% if forloop.last %} <div class="space--xxxxl"></div> {% endif %}
     {% endfor %}
   </div>
 </div>

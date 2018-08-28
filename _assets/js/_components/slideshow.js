@@ -108,4 +108,9 @@ function runSlideshow() {
     clearInterval(fauxAutoplay);
   });
 
+  // stop carousel autoplaying, if dots are clicked
+  $('.owl-dot').on('click', function(event) {
+    clearInterval(fauxAutoplay);
+  });
+
 }

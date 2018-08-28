@@ -72,7 +72,7 @@ $modaltransition-distance: 4em;
     right: 0;
     bottom: 0;
     padding: 0;
-    overflow: scroll;
+    overflow: auto;
     @include bp($lg){
       padding: 0 $icon-size;
       overflow: auto;
@@ -112,6 +112,12 @@ $modaltransition-distance: 4em;
       height: $icon-size;
       width: $icon-size;
     }
+  }
+
+  &--local {
+    max-width: $lg;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }

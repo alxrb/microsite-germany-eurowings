@@ -1,5 +1,5 @@
 
-{% assign modal-items = site.data.modal.text | concat: site.data.modal.video %}
+{% assign modal-items = site.data.modal.text %}
 
 <div class="js-modal modal is-closed">
   <div class="js-close-modal modal__close"></div>
@@ -16,7 +16,7 @@
           {% if item-page.id == page.id or item-page.id == 'all' %}
             <div
               class="modal__item modal__item--{{item.id}} is-closed"
-              id="modal-{{item.id}}"
+              id="modal--{{item.id}}"
               {% if item.youtube-id %}data-video-id="{{item.youtube-id}}"{% endif %}
               {% if item.page %}data-group-page="{{item.page}}"{% endif %}
               {% if item.section %}data-group-section="{{item.section}}"{% endif %}>
@@ -25,6 +25,8 @@
                   {% include modal/content/highlight.html %}
                 {% elsif item.type == 'video' %}
                   {% include modal/content/video.html %}
+                {% elsif item.type == 'local' %}
+                  {% include modal/content/local.html %}
                 {% else %}
                   {% include modal/content/text.html %}
                 {% endif %}
@@ -49,7 +51,7 @@
                 <div class="bold-title bold-title--sm">{{airport.title}}</div>
                 <div class="sub-title">with Eurowings</div>
                 <div class="space--xs"></div>
-                <p class="text--normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia saepe, et unde, incidunt id odio corporis illo dolorum facere voluptates, esse consequuntur autem natus sint dolor consectetur earum fugit blanditiis!</p>
+                <p class="text--normal width width--md">Choose from seven UK airports and fly with one of the fastest growing airlines in Europe for your Germany adventures...</p>
                 <div class="space--md"></div>
                 <a href="{{airport.link}}" class="btn btn--purple">See Flights</a>
               </div>

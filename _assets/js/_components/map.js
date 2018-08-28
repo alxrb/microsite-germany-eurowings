@@ -164,12 +164,21 @@ $(document).keyup(function(event) {
       map.setLayerZoomRange('city-labels', cityLabelZoomLevel, maxZoomLevel);
 
       function cityClickEvent(e) {
+
+        // find the coordinates for the clicked city
+        var clickedCityCoordinates;
+        for (var i = 0; i < cityMarkers.features.length; i++) {
+          if (cityMarkers.features[i].properties.id === e.features[0].properties.id) {
+            clickedCityCoordinates = cityMarkers.features[i].geometry.coordinates;
+          }
+        }
+
         // get the current zoom level
         var currentZoomLevel = map.getZoom();
         if (currentZoomLevel <= stuttgartZoomLevel) {
           // function for when zoomed out on germany
           map.flyTo({
-            center: e.lngLat,
+            center: clickedCityCoordinates,
             zoom: (stuttgartZoomLevel + .5)
           });
         } else {

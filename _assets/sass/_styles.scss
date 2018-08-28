@@ -25,7 +25,7 @@
 }
 
 .flights {
-  $nav-color: #393554;
+  $nav-color: #446980;
   .banner__bg { background-color: darken($nav-color,8); }
   .site-nav--banner { background-color: rgba($nav-color,.66); }
   .site-nav--banner .site-nav__link.is-current { background-color: rgba(darken($nav-color,3),.66); }
@@ -60,23 +60,55 @@
 }
 
 .local {
-  position: relative;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $white;
   border-radius: 4px;
-  box-shadow: 3px 3px 30px rgba($black,0.1);
   overflow: hidden;
-  &__image {
-    position: relative;
+  box-shadow: 3px 3px 30px rgba($black,0.1);
+
+  @include bp($md){
+    max-width: 500px
+  }
+  @include bp($xxl){
+    max-width: none;
+  }
+  &__wrap {
+    padding: 2rem 1rem;
     color: $white;
     text-align: center;
+    @include background-attributes;
   }
   &__avatar {
-    width: 70px;
-  }
-  &__content {
-    padding: 1.5em;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
   }
 }
 
-
-
-
+.image-gallery {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 75%;
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+  }
+  &__next    {
+    opacity: 0;
+    visibility: hidden;
+  }
+  &__current {
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
+  }
+}

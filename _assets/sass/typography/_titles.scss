@@ -61,17 +61,19 @@
 
 
 .banner-title {
-
   // custom banner headline
   font-family: $font-title-01;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: .75rem;
-  font-size: $s10;
+  letter-spacing: .5rem;
   line-height: 1;
-  // font-size: $s5;
-  // @include bp($md){ font-size: $s10; }
-  // @include bp($xl){ font-size: $s11; }
+  font-size: $s7;
+  @include bp($md){ font-size: $s8; }
+  @include bp($lg){
+    font-size: $s9;
+    letter-spacing: .75rem;
+  }
+  @include bp($xl){ font-size: $s10; }
 }
 
 
@@ -81,12 +83,16 @@
   font-family: $font-title-01;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 1rem;
-  font-size: $s10;
+  letter-spacing: .4rem;
+  font-size: $s7;
   line-height: 1;
+  @include bp($md){ font-size: $s9; }
   @include bp($lg){
-    font-size: $s12;
+    font-size: $s10;
+    letter-spacing: 1rem;
   }
+  @include bp($xl){ font-size: $s11; }
+  @include bp($xxl){ font-size: $s12; }
 }
 
 .overview-sub-title {
@@ -94,12 +100,14 @@
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.6rem;
-  font-size: $s3;
+  font-size: $s2;
   line-height: 1.25;
-  @include bp($lg){
-    font-size: $s5;
+  @include bp($md){
+    font-size: $s3;
     letter-spacing: 1rem;
   }
+  @include bp($lg){ font-size: $s4; }
+  @include bp($xl){ font-size: $s5; }
 }
 
 .bold-title {
@@ -107,11 +115,13 @@
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .5rem;
-  font-size: $s8;
+  font-size: $s6;
   line-height: 1;
+  @include bp($lg){ font-size: $s8; }
   &--sm {
-    font-size: $s6;
+    font-size: $s4;
     letter-spacing: .4rem;
+    @include bp($lg){ font-size: $s6; }
   }
 }
 
@@ -120,5 +130,9 @@
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: .4rem;
-  font-size: $s1;
+  font-size: $s0;
+  @include bp($lg){ font-size: $s1; }
+  &--sm {
+    font-size: $s-1;
+  }
 }

@@ -1,6 +1,24 @@
-- title: Local
-  id: local
-  type: text
-  content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue.
+- id: eric-gauthier
+  type: local
   pages:
-  - id: stuttgart
+    - id: all
+  name: Eric Gauthier
+  job-title: Gauthier Dance, Stuttgart Ballet
+  description: Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.
+  content: >
+    <p>I guess I’m the dance guy! I danced for the Stuttgart ballet for 12 years, then created Gauthier Dance – a more modern dance company. I am also the founder of Colours International Dance Festival.</p>
+    <p>Stuttgart is a great mix of everything. Of course it is famous for its cars, Mercedes and Porsche, each with their own museum. But beyond that we have a good selection of of arts, museums, theatre, dance, and opera. Stuttgart is a great place for the arts – luckily here in Germany, the state supports the arts well financially, quite the opposite from my home in America!</p>
+    <p>Be sure to visit some of Stuttgart’s special museums. The home of modern art, Kunst Museum, is great, but for me the Staatsgalerie is something special, with amazing works from Monet and Picasso. The Stuttgart Ballet is still, in my opinion, the best classic Stuttgart experience though! Oh, and don’t miss the incredible views from the TV Tower.</p>
+
+- id: karolina-kauer
+  type: local
+  pages:
+    - id: all
+  name: Karolina Kauer
+  job-title: Fashion & lifestyle blogger
+  description: Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.
+  content: >
+    <p>Hi, my name is Karolina Kauer. I am a fashion &amp; lifestyle blogger, photographer, mother of a two-year-old girl and a wife with passion.</p>
+    <p>To get inspired I enjoy strolling through the Stuttgarter Königsstraße in the mornings. I love the little hidden restaurants, cafés and big plazas in Stuttgart that are full of life. Often, you can find old historic buildings colliding with new buildings and bankers joining students. This mix has a charm that inspires me for new looks.</p>
+    <p>My personal shopping highlight is the OUTLETCITY METZINGEN, which offers anything from Nike to Gucci. What I like most about the Outletcity in Metzingen is the great inner-city location and the chic buildings that remind me of international boulevards with the luxurious shops. I also like it that the Outletcity reinvents itself throughout the years again and again. It is the place to be for shoppers and bargain hunters.</p>
+    <p>For the best view and the perfect spot to relax at the end of the day I can recommend the Karlshöhe or the Teehaus in Bopser Wald. Stuttgart has many nooks – you just have to find them.</p>
