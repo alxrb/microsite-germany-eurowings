@@ -1,7 +1,7 @@
 - id: eric-gauthier
   type: local
   pages:
-    - id: all
+    - id: stuttgart
   name: Eric Gauthier
   job-title: Gauthier Dance, Stuttgart Ballet
   description: Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.
@@ -13,7 +13,7 @@
 - id: karolina-kauer
   type: local
   pages:
-    - id: all
+    - id: stuttgart
   name: Karolina Kauer
   job-title: Fashion & lifestyle blogger
   description: Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.

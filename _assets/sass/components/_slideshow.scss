@@ -107,6 +107,7 @@ $info-height: 70px;
     height: ($info-height*3);
     $gradient-color: #141823;
     background: linear-gradient(0deg, rgba($gradient-color,.75) 0%, rgba($gradient-color,0) 100%);
+    pointer-events: none;
   }
 }
 

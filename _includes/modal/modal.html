@@ -53,7 +53,7 @@
                 <div class="space--xs"></div>
                 <p class="text--normal width width--md">Choose from seven UK airports and fly with one of the fastest growing airlines in Europe for your Germany adventures...</p>
                 <div class="space--md"></div>
-                <a href="{{airport.link}}" class="btn btn--purple">See Flights</a>
+                <a id="track-map-btn-airport-{{airport.id}}" href="{{airport.link}}" class="btn btn--purple">See Flights</a>
               </div>
             </div>
           </div>
@@ -79,8 +79,8 @@
               <div class="space--xs"></div>
               <p>{{city.description}}</p>
               <div class="btn__padding">
-                <a href="{{city.link}}" class="btn btn--sm btn--red">Find Out More</a> <span>&nbsp;</span>
-                <a href="{{city.airport.link}}" class="btn btn--sm btn--outline btn--outline-red">See Flights</a>
+                <a id="track-map-btn-info-{{city.id}}" href="{{city.link}}" class="btn btn--sm btn--red">Find Out More</a> <span>&nbsp;</span>
+                <a id="track-map-btn-flights-{{city.id}}" href="{{city.airport.link}}" class="btn btn--sm btn--outline btn--outline-red">See Flights</a>
               </div>
             </div>
           </div>

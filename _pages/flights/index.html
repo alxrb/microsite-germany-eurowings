@@ -33,10 +33,7 @@ features:
     title-sub: The premium ticket
     content: First-class service awaits, making any flight with Eurowings unforgettable. With lounge access, extra luggage allowance, speedy boarding and much more, this ticket is for savvy travellers who expect only the best service and convenience.
     link: https://www.eurowings.com/en/information/fares/bizclass/short-medium-haul-routes.html
-
-
 ---
-
 
 <div class="vpad--xxl">
   <div class="container">
@@ -60,7 +57,7 @@ features:
         <h3 class="sub-title">{{feature.title-sub}}</h3>
         <p>{{feature.content}}</p>
         <div class="space--sm"></div>
-        <a href="{{feature.link}}" class="btn btn--sm btn--purple">Find out more</a>
+        <a id="track-btn-eurowings-{{feature.id}}" href="{{feature.link}}" class="btn btn--sm btn--purple">Find out more</a>
       </div>
     </div>
     {% endfor %}

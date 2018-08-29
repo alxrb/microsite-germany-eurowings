@@ -21,7 +21,7 @@ map: true
         <div class="width width--lg">
           <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/map/bg-map-overlay.png');">
             <div class="bg-img__content">
-              <a class="js-open-map btn btn--solid" data-map-focus="germany">Explore the map</a>
+              <a id="track-btn-map-{{page.id}}" class="js-open-map btn btn--solid" data-map-focus="germany">Explore the map</a>
             </div>
           </div>
         </div>
@@ -29,8 +29,6 @@ map: true
     </div>
   </div>
 </div>
-
-
 
 {% include nav/page.html content=site.data.cities %}
 
@@ -53,9 +51,9 @@ map: true
           <h2 class="bold-title bold-title--sm">{{city.title}}</h2>
           <p>{{city.description}}</p>
           <div class="btn__padding">
-            <a href="{{city.link}}" class="btn btn--sm btn--red">Find Out More</a> <span>&nbsp;</span>
+            <a id="track-btn-{{page.id}}-info-{{city.id}}" href="{{city.link}}" class="btn btn--sm btn--red">Find Out More</a> <span>&nbsp;</span>
             {% assign airport = site.data.airports | where: 'id', city.id | first %}
-            <a href="{{airport.link}}" class="btn btn--sm btn--outline btn--outline-red">See Flights</a>
+            <a id="track-btn-{{page.id}}-flights-{{city.id}}" href="{{airport.link}}" class="btn btn--sm btn--outline btn--outline-red">See Flights</a>
           </div>
         </div>
       </div>

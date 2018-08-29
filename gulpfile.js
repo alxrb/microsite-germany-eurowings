@@ -114,6 +114,12 @@ gulp.task('build-main-js', function(cb) {
     // custom js - with on doc ready wrapper
     './_assets/js/_components/on-ready/start.js',
 
+    // map marker data
+    './_assets/js/_components/marker-data/pois.js',
+    './_assets/js/_components/marker-data/airports.js',
+    './_assets/js/_components/marker-data/cities.js',
+    './_assets/js/_components/marker-data/stuttgart.js',
+
     // components
     './_assets/js/_components/standard.js',
     './_assets/js/_components/slideshow.js',
@@ -122,12 +128,6 @@ gulp.task('build-main-js', function(cb) {
     './_assets/js/_components/video.js',
     './_assets/js/_components/map.js',
     './_assets/js/_components/page-nav.js',
-
-    // map marker data
-    './_assets/js/_components/marker-data/pois.js',
-    './_assets/js/_components/marker-data/airports.js',
-    './_assets/js/_components/marker-data/cities.js',
-    './_assets/js/_components/marker-data/stuttgart.js',
 
     // custom js for project
     './_assets/js/main.js',

@@ -2,15 +2,13 @@
 
 .bg {
   &--white { background-color: $white; }
-
   &--grey-darkest   { background-color: $grey-darkest; }
-  &--grey-darker    { background-color: $grey-darker; }
+  // &--grey-darker    { background-color: $grey-darker; }
   &--grey-dark      { background-color: $grey-dark; }
-  &--grey           { background-color: $grey; }
-  &--grey-light     { background-color: $grey-light; }
-  &--grey-lighter   { background-color: $grey-lighter; }
+  // &--grey           { background-color: $grey; }
+  // &--grey-light     { background-color: $grey-light; }
+  // &--grey-lighter   { background-color: $grey-lighter; }
   &--grey-lightest  { background-color: $grey-lightest; }
-
   &--img   { @include background-attributes; }
   &__fixed {
     position: fixed;
@@ -22,7 +20,6 @@
     @include background-attributes;
     background-color: $grey-darker;
   }
-
   &--fade {
     background-position: top center;
     background-repeat: no-repeat;

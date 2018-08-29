@@ -27,15 +27,15 @@
   &--red { background-color: $g-red;
     &:hover { background-color: darken($g-red,10); }
   }
-  &--yellow { background-color: $g-yellow;
-    &:hover { background-color: darken($g-yellow,10); }
-  }
+  // &--yellow { background-color: $g-yellow;
+  //   &:hover { background-color: darken($g-yellow,10); }
+  // }
   &--purple { background-color: $e-purple;
     &:hover { background-color: darken($e-purple,10); }
   }
-  &--blue { background-color: $e-blue;
-    &:hover { background-color: darken($e-blue,10); }
-  }
+  // &--blue { background-color: $e-blue;
+  //   &:hover { background-color: darken($e-blue,10); }
+  // }
   &--white {
     color: $grey-darker;
     background-color: rgba($white,.6);
@@ -57,14 +57,14 @@
       @include transition;
     }
   }
-  &--outline-orange {
-    &:before { border-color: $orange; }
-    &:hover {
-      color: $white;
-      background-color: $orange;
-      &:before { border-color: $orange; }
-    }
-  }
+  // &--outline-orange {
+  //   &:before { border-color: $orange; }
+  //   &:hover {
+  //     color: $white;
+  //     background-color: $orange;
+  //     &:before { border-color: $orange; }
+  //   }
+  // }
   &--outline-red {
     &:before { border-color: $g-red; }
     &:hover {
@@ -73,12 +73,12 @@
       &:before { border-color: $g-red; }
     }
   }
-  &--outline-yellow {
-    &:before { border-color: $g-yellow; }
-    &:hover {
-      color: $white;
-      background-color: $g-yellow;
-      &:before { border-color: $g-yellow; }
-    }
-  }
+  // &--outline-yellow {
+  //   &:before { border-color: $g-yellow; }
+  //   &:hover {
+  //     color: $white;
+  //     background-color: $g-yellow;
+  //     &:before { border-color: $g-yellow; }
+  //   }
+  // }
 }

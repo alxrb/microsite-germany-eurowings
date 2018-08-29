@@ -21,7 +21,7 @@ function slideshowClose(e){
   clearInterval(checkSlideContent);
 }
 
-$('.js-close-slideshow').click(function(){ slideshowClose(event); });
+$('.js-close-slideshow').click(function(event){ slideshowClose(event); });
 
 // closes modal on escape key press
 $(document).keyup(function(event) {

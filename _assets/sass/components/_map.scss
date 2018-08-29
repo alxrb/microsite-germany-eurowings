@@ -49,3 +49,9 @@
 }
 
 .map-disable-scroll { overflow: hidden; }
+
+// mapbox resets
+.mapboxgl-ctrl,
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib.mapboxgl-compact {
+  margin: 0 !important;
+}

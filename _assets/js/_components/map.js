@@ -19,7 +19,7 @@ function mapClose(e){
   $('.map__wrap').removeClass('is-open').addClass('is-closed');
 }
 
-$('.js-close-map').click(function(){ mapClose(event); });
+$('.js-close-map').click(function(event){ mapClose(event); });
 
 // closes modal on escape key press
 $(document).keyup(function(event) {
