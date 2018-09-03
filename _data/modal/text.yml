@@ -19,4 +19,19 @@
     <p>Hi, my name is Karolina Kauer. I am a fashion &amp; lifestyle blogger, photographer, mother of a two-year-old girl and a wife with passion.</p>
     <p>To get inspired I enjoy strolling through the Stuttgarter Königsstraße in the mornings. I love the little hidden restaurants, cafés and big plazas in Stuttgart that are full of life. Often, you can find old historic buildings colliding with new buildings and bankers joining students. This mix has a charm that inspires me for new looks.</p>
     <p>My personal shopping highlight is the OUTLETCITY METZINGEN, which offers anything from Nike to Gucci. What I like most about the Outletcity in Metzingen is the great inner-city location and the chic buildings that remind me of international boulevards with the luxurious shops. I also like it that the Outletcity reinvents itself throughout the years again and again. It is the place to be for shoppers and bargain hunters.</p>
-    <p>For the best view and the perfect spot to relax at the end of the day I can recommend the Karlshöhe or the Teehaus in Bopser Wald. Stuttgart has many nooks – you just have to find them.</p>- id: ebru
+    <p>For the best view and the perfect spot to relax at the end of the day I can recommend the Karlshöhe or the Teehaus in Bopser Wald. Stuttgart has many nooks – you just have to find them.</p>
+
+- id: ebru
+  type: local
+  pages:
+    - id: stuttgart
+  name: Ebru
+  job-title: Food blogger
+  content: >
+    <p>Hello travellers, my name is Ebru. I've been blogging as Woessichheute, together with my sister Aylin, for over two years.
+    The aim of our food blog is simple; to celebrate tasty food and guide our readers through
+    eating out in Stuttgart.</p>
+    <p>Stuttgart offers a very multicultural food scene, with a huge number of restaurants serving specialties from all around the globe. Stuttgart is also a great city to discover traditional Swabian specialities such as Maultaschen (a kind of large ravioli packed with meat) or Käsespätzle (home-made noodles with cheese and onions).</p>
+    <p>If you are in downtown, make sure you don't miss the Markthalle; it's an indoor food market with regional and international specialities. For an extraordinary dining experience we can recommend the Cube with a stunning view of Stuttgarts main square (Schlossplatz).</p>
+    <p>If you're looking for something low-key to go, try a burger of the cult burger bar Udo Snack or a delicious kebab from Alaturka or MMC Kult.</p>
+    <p>Those, who like to enjoy a night out, should make their way to the Theodor Heuss Straße with its numerous bars and clubs.</p>
