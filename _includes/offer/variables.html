@@ -8,3 +8,11 @@
 
 <!-- offers by price -->
 {% assign offers-by-price = offers | sort: 'price' %}
+
+<!-- offers by preference then price -->
+
+{% assign preferred-offers = offers | where_exp: 'item', 'item.priority == "high"' | sort: 'price' %}
+
+{% assign non-preferred-offers = offers | where_exp: 'item', 'item.priority == null' | sort: 'price' %}
+
+{% assign offers-by-pref-then-price = null | concat: preferred-offers | concat: non-preferred-offers  %}
