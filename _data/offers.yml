@@ -16,3 +16,51 @@
   saved: 31
   expires: 2018/09/04
   link: https://www.secretescapes.com/hyatt-regency-cologne-cologne-germany-1/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=Aug2018
+
+- title: Festive Stuttgart break with Christmas market dates
+  id: festive-stuttgart-break-with-christmas-market-dates
+  priority: high
+  location: ARCOTEL Camino Stuttgart, Germany
+  description: Discover Stuttgart's cultural charms and Christmas markets from this modern and central spa hotel - with breakfast, flights and festive availability
+  price: 185
+  price-description: per person for 2 nights
+  saved: 44
+  expires: 2018/09/17
+  link: https://www.secretescapes.com/festive-stuttgart-break-with-christmas-market-dates-arcotel-camino-stuttgart-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=Aug2018
+
+- title: Chic design hotel in Düsseldorf
+  id: chic-design-hotel-in-düsseldorf
+  location: Living Hotel Düsseldorf, Germany
+  description: A chic design hotel within walking distance of Düsseldorf’s Old Town and the unrivaled shopping area of Königsallee – includes breakfast and fitness area access
+  price: 38
+  price-description: per person per night
+  expires: 2018/09/11
+  link: https://www.secretescapes.com/a-chic-design-hotel-in-duesseldorf-living-hotel-duesseldorf-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=Aug2018
+
+- title: Festive Cologne stay on the banks of the River Rhine
+  id: festive-cologne-stay-on-the-banks-of-the-river-rhine
+  location: Hyatt Regency Cologne, Germany
+  description: An exquisite hotel on the banks of the famous River Rhine in Cologne - includes breakfast, spa access and optional river view, plus a chance to visit during the Christmas season
+  price: 189
+  price-description: per person for 2 nights
+  expires: 2018/09/17
+  link: https://www.secretescapes.com/cologne-stay-on-the-banks-of-the-river-rhine-hyatt-regency-cologne-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=Aug2018
+
+- title: 5* refined Cologne hotel overlooking the cathedral
+  id: refined-cologne-hotel-overlooking-the-cathedral
+  location: Excelsior Hotel Ernst, Germany
+  description: A glamorous, five-star hotel with views of Cologne's magnificent Gothic cathedral, including breakfast, spa perks and a glass of champagne
+  price: 86
+  price-description: per person per night
+  saved: 47
+  expires: 2018/09/11
+  link: https://www.secretescapes.com/5-star-refined-cologne-hotel-overlooking-the-cathedral-excelsior-hotel-ernst-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=Aug2018
+
+- title: Wintery Berlin break with Christmas market dates
+  id: wintery-berlin-break-with-christmas-market-dates
+  location: Hotel Q!, Germany
+  description: An uber-hip GRAFT design hotel with a soothing spa in Berlin, visiting during the city's most magical season - includes breakfast and flights
+  price: 149
+  price-description: per person for 2 nights
+  expires: 2018/09/17
+  link: https://www.secretescapes.com/wintery-berlin-break-with-christmas-market-dates-hotel-q-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=Aug2018
