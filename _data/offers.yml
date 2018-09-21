@@ -1,72 +1,3 @@
-- title: Cologne stay on the banks of the River Rhine
-  id: cologne-stay-on-the-banks-of-the-river-rhine
-  location: Hyatt Regency Cologne, Germany
-  description: An exquisite hotel on the banks of the famous River Rhine in Cologne - includes breakfast, spa access and optional river view
-  price: 137
-  price-description: per room per night
-  saved: 31
-  expires: 2018/09/18
-  link: https://www.secretescapes.com/hyatt-regency-cologne-cologne-germany-1/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=Aug2018
-
-- title: Festive Stuttgart break with Christmas market dates
-  id: festive-stuttgart-break-with-christmas-market-dates
-  priority: high
-  location: ARCOTEL Camino Stuttgart, Germany
-  description: Discover Stuttgart's cultural charms and Christmas markets from this modern and central spa hotel - with breakfast, flights and festive availability
-  price: 175
-  price-description: per person for 2 nights
-  saved: 44
-  expires: 2018/09/17
-  link: https://www.secretescapes.com/festive-stuttgart-break-with-christmas-market-dates-arcotel-camino-stuttgart-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=Aug2018
-
-- title: Chic design hotel in Düsseldorf
-  id: chic-design-hotel-in-düsseldorf
-  location: Living Hotel Düsseldorf, Germany
-  description: A chic design hotel within walking distance of Düsseldorf’s Old Town and the unrivaled shopping area of Königsallee – includes breakfast and fitness area access
-  price: 75
-  price-description: per room per night
-  expires: 2018/09/13
-  link: https://www.secretescapes.com/a-chic-design-hotel-in-duesseldorf-living-hotel-duesseldorf-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=Aug2018
-
-- title: Festive Cologne stay on the banks of the River Rhine
-  id: festive-cologne-stay-on-the-banks-of-the-river-rhine
-  location: Hyatt Regency Cologne, Germany
-  description: An exquisite hotel on the banks of the famous River Rhine in Cologne - includes breakfast, spa access and optional river view, plus a chance to visit during the Christmas season
-  price: 189
-  price-description: per person for 2 nights
-  expires: 2018/09/17
-  link: https://www.secretescapes.com/cologne-stay-on-the-banks-of-the-river-rhine-hyatt-regency-cologne-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=Aug2018
-
-- title: 5* refined Cologne hotel overlooking the cathedral
-  id: refined-cologne-hotel-overlooking-the-cathedral
-  location: Excelsior Hotel Ernst, Germany
-  description: A glamorous, five-star hotel with views of Cologne's magnificent Gothic cathedral, including breakfast, spa perks and a glass of champagne
-  price: 173
-  price-description: per rooms per night
-  saved: 47
-  expires: 2018/09/18
-  link: https://www.secretescapes.com/5-star-refined-cologne-hotel-overlooking-the-cathedral-excelsior-hotel-ernst-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=Aug2018
-
-- title: Wintery Berlin break with Christmas market dates
-  id: wintery-berlin-break-with-christmas-market-dates
-  location: Hotel Q!, Germany
-  description: An uber-hip GRAFT design hotel with a soothing spa in Berlin, visiting during the city's most magical season - includes breakfast and flights
-  price: 149
-  price-description: per person for 2 nights
-  expires: 2018/09/17
-  link: https://www.secretescapes.com/wintery-berlin-break-with-christmas-market-dates-hotel-q-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=Aug2018
-
-- title: Stylish Stuttgart hotel with magical Christmas market dates
-  id: stylish-stuttgart-hotel-with-magical-christmas-market-dates
-  priority: high
-  location: ARCOTEL Camino Stuttgart, Germany
-  description: Discover Stuttgart's cultural charms from an elegant, city-centre hotel with a serene spa - includes breakfast, dinner on your first evening and festive dates
-  price: 118
-  price-description: per room per night
-  saved: 52
-  expires: 2018/09/18
-  link: https://www.secretescapes.com/stylish-stuttgart-hotel-with-magical-christmas-market-dates-arcotel-camino-stuttgart-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
-
 - title: 5* apartment stay at a glamorous hotel in Hamburg
   id: apartment-stay-at-a-glamorous-hotel-in-hamburg
   location: Residences at Park Hyatt Hamburg, Germany
@@ -74,7 +5,7 @@
   price: 172
   price-description: per apartment per night
   saved: 52
-  expires: 2018/09/18
+  expires: 2018/09/25
   link: https://www.secretescapes.com/5-star-apartment-stay-at-a-glamorous-hotel-in-hamburg-residences-at-park-hyatt-hamburg-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
 
 - title: Berlin hotel in arty Kreuzberg
@@ -83,15 +14,35 @@
   description: A sleek Berlin stay at a modern Kreuzberg hotel within easy reach of the city's main attractions – includes breakfast, welcome drink and a bottle of wine
   price: 78
   price-description: per room per night
-  saved: 56
-  expires: 2018/09/18
+  saved: 60
+  expires: 2018/09/25
   link: https://www.secretescapes.com/modern-berlin-hotel-in-arty-kreuzberg-hotel-vier-jahreszeiten-berlin-city-kreuzberg/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
 
-- title: Enchanting Bremen stay with Christmas market dates
-  id: enchanting-bremen-stay-with-christmas-market-dates
-  location: Maritim Hotel Bremen, Germany
-  description: Visit one of Germany’s prettiest and culture-rich cities and experience its unforgettable Christmas markets – includes breakfast
-  price: 129
-  price-description: per person for 2 nights
-  expires: 2018/09/17
-  link: https://www.secretescapes.com/enchanting-bremen-stay-with-christmas-market-dates-maritim-hotel-bremen-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
+- title: Sleek Hilton hotel in Dusseldorf, close to the River Rhine
+  id: sleek-hilton-hotel-in-dusseldorf-close-to-the-river-rhine
+  location: Hilton Dusseldorf, Germany
+  description: A modern and polished Dusseldorf hotel with wellness facilities near the River Rhine, within easy reach of central sights - including breakfast
+  price: 81
+  price-description: per room per night
+  saved: 54
+  expires: 2018/09/25
+  link: https://www.secretescapes.com/sleek-hilton-hotel-in-dusseldorf-close-to-the-river-rhine-hilton-dusseldorf-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
+
+- title: 5* Hamburg stay at a chic hotel with Christmas market dates
+  id: hamburg-stay-at-a-chic-hotel-with-christmas-market-dates
+  location: SIDE Hamburg, Germany
+  description: Explore Germany’s second-largest city from a luxurious hotel, set in the heart of Hamburg – includes breakfast
+  price: 144
+  price-description: per room per night
+  saved: 34
+  expires: 2018/09/25
+  link: https://www.secretescapes.com/luxury-central-hamburg-hotel-side-hamburg-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
+
+- title: Cool converted cinema stay in Munich
+  id: cool-converted-cinema-stay-in-munich
+  location: arcona LIVING MÜNCHEN, Germany
+  description: A stylish stay at a former cinema turned contemporary hotel in the hip Bavarian capital, with breakfast and Christmas market availability
+  price: 49
+  price-description: per person - based on 2 persons
+  expires: 2018/09/25
+  link: https://www.secretescapes.com/arcona-living-munchen-munich-germany3/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
