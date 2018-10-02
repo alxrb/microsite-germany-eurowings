@@ -1,48 +1,69 @@
-- title: 5* apartment stay at a glamorous hotel in Hamburg
-  id: apartment-stay-at-a-glamorous-hotel-in-hamburg
-  location: Residences at Park Hyatt Hamburg, Germany
-  description: An ultra-stylish, five-star apartment at a glamorous, central Hamburg hotel, with a sleek spa and fine dining - including breakfast and access to the wellness facilities
-  price: 172
-  price-description: per apartment per night
-  saved: 52
-  expires: 2018/09/25
-  link: https://www.secretescapes.com/5-star-apartment-stay-at-a-glamorous-hotel-in-hamburg-residences-at-park-hyatt-hamburg-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
-
-- title: Berlin hotel in arty Kreuzberg
-  id: berlin-hotel-in-arty-kreuzberg
-  location: Hotel Vier Jahreszeiten Berlin City Kreuzberg
-  description: A sleek Berlin stay at a modern Kreuzberg hotel within easy reach of the city's main attractions – includes breakfast, welcome drink and a bottle of wine
-  price: 78
-  price-description: per room per night
-  saved: 60
-  expires: 2018/09/25
-  link: https://www.secretescapes.com/modern-berlin-hotel-in-arty-kreuzberg-hotel-vier-jahreszeiten-berlin-city-kreuzberg/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
-
-- title: Sleek Hilton hotel in Dusseldorf, close to the River Rhine
-  id: sleek-hilton-hotel-in-dusseldorf-close-to-the-river-rhine
-  location: Hilton Dusseldorf, Germany
-  description: A modern and polished Dusseldorf hotel with wellness facilities near the River Rhine, within easy reach of central sights - including breakfast
-  price: 81
-  price-description: per room per night
-  saved: 54
-  expires: 2018/09/25
-  link: https://www.secretescapes.com/sleek-hilton-hotel-in-dusseldorf-close-to-the-river-rhine-hilton-dusseldorf-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
-
 - title: 5* Hamburg stay at a chic hotel with Christmas market dates
   id: hamburg-stay-at-a-chic-hotel-with-christmas-market-dates
   location: SIDE Hamburg, Germany
   description: Explore Germany’s second-largest city from a luxurious hotel, set in the heart of Hamburg – includes breakfast
   price: 144
   price-description: per room per night
-  saved: 34
-  expires: 2018/09/25
+  saved: 37
+  expires: 2018/10/09
   link: https://www.secretescapes.com/luxury-central-hamburg-hotel-side-hamburg-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
 
-- title: Cool converted cinema stay in Munich
-  id: cool-converted-cinema-stay-in-munich
-  location: arcona LIVING MÜNCHEN, Germany
-  description: A stylish stay at a former cinema turned contemporary hotel in the hip Bavarian capital, with breakfast and Christmas market availability
-  price: 49
-  price-description: per person - based on 2 persons
-  expires: 2018/09/25
-  link: https://www.secretescapes.com/arcona-living-munchen-munich-germany3/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
+- title: Design hotel stay in Stuttgart
+  id: design-hotel-stay-in-stuttgart
+  priority: high
+  location: Jaz Stuttgart, Germany
+  description: Sleek music-themed design hotel stay in the centre of Stuttgart – with breakfast and spa access
+  price: 99
+  price-description: per room per night
+  saved: 53
+  expires: 2018/10/09
+  link: https://www.secretescapes.com/design-hotel-stay-in-stuttgart-jaz-stuttgart-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
+
+- title: Sleek Hamburg stay at a brand-new design hotel
+  id: sleek-hamburg-stay-at-a-brand-new-design-hotel
+  location: TORTUE, Germany
+  description: A brand-new design hotel with sleek interiors and renowned dining on Hamburg’s grand boulevards – includes breakfast
+  price: 149
+  price-description: per room per night
+  saved: 31
+  expires: 2018/10/09
+  link: https://www.secretescapes.com/sleek-hamburg-stay-at-a-brand-new-design-hotel-tortue-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
+
+- title: Plush boutique hotel in Berlin's heart
+  id: plush-boutique-hotel-in-berlin-s-heart
+  location: Henri Hotel, Germany
+  description: A plush boutique stay in a Belle Epoque-style hotel, located on a renowned avenue in Berlin, including breakfast and thoughtful perks
+  price: 104
+  price-description: per room per night
+  saved: 50
+  expires: 2018/10/09
+  link: https://www.secretescapes.com/plush-boutique-hotel-in-berlins-heart-henri-hotel-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
+
+- title: Contemporary Berlin eco hotel stay
+  id: contemporary-berlin-eco-hotel-stay
+  location: Scandic Berlin Potsdamer Platz, Germany
+  description: Enjoy a modern stay in historic Berlin, just moments from iconic Potsdamer Platz, including breakfast
+  price: 87
+  price-description: per room per night
+  expires: 2018/10/09
+  link: https://www.secretescapes.com/contemporary-eco-hotel-in-the-heart-of-berlin-scandic-berlin-potsdamer-platz-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
+
+- title: Sleek & minimalist central Düsseldorf hotel
+  id: sleek-minimalist-central-dusseldorf-hotel
+  location: Ruby Coco, Germany
+  description: Explore Düsseldorf from an exclusive new Ruby Hotels outpost, situated in the heart of the city - includes breakfast
+  price: 81
+  price-description: per room per night
+  saved: 46
+  expires: 2018/10/09
+  link: https://www.secretescapes.com/sleek-and-minimalist-central-dusseldorf-hotel-ruby-coco-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
+
+- title: 5* Dresden spa hotel with Michelin-starred dining
+  id: dresden-spa-hotel-with-michelin-starred-dining
+  location: Bülow Palais, Germany
+  description: Stay at a stunning five-star property with a lavish spa and Michelin-starred restaurant in the historic heart of Dresden – includes gourmet breakfast and suite options
+  price: 122
+  price-description: per room per night
+  saved: 45
+  expires: 2018/10/09
+  link: https://www.secretescapes.com/5-star-dresden-spa-hotel-with-michelin-starred-dining-buelow-palais-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
