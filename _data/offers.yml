@@ -1,13 +1,3 @@
-- title: 5* Hamburg stay at a chic hotel with Christmas market dates
-  id: hamburg-stay-at-a-chic-hotel-with-christmas-market-dates
-  location: SIDE Hamburg, Germany
-  description: Explore Germany’s second-largest city from a luxurious hotel, set in the heart of Hamburg – includes breakfast
-  price: 144
-  price-description: per room per night
-  saved: 37
-  expires: 2018/10/09
-  link: https://www.secretescapes.com/luxury-central-hamburg-hotel-side-hamburg-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
-
 - title: Design hotel stay in Stuttgart
   id: design-hotel-stay-in-stuttgart
   priority: high
@@ -16,7 +6,7 @@
   price: 99
   price-description: per room per night
   saved: 53
-  expires: 2018/10/09
+  expires: 2018/10/16
   link: https://www.secretescapes.com/design-hotel-stay-in-stuttgart-jaz-stuttgart-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
 
 - title: Sleek Hamburg stay at a brand-new design hotel
@@ -26,7 +16,7 @@
   price: 149
   price-description: per room per night
   saved: 31
-  expires: 2018/10/09
+  expires: 2018/10/16
   link: https://www.secretescapes.com/sleek-hamburg-stay-at-a-brand-new-design-hotel-tortue-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
 
 - title: Plush boutique hotel in Berlin's heart
@@ -36,7 +26,7 @@
   price: 104
   price-description: per room per night
   saved: 50
-  expires: 2018/10/09
+  expires: 2018/10/16
   link: https://www.secretescapes.com/plush-boutique-hotel-in-berlins-heart-henri-hotel-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
 
 - title: Contemporary Berlin eco hotel stay
@@ -45,7 +35,7 @@
   description: Enjoy a modern stay in historic Berlin, just moments from iconic Potsdamer Platz, including breakfast
   price: 87
   price-description: per room per night
-  expires: 2018/10/09
+  expires: 2018/10/16
   link: https://www.secretescapes.com/contemporary-eco-hotel-in-the-heart-of-berlin-scandic-berlin-potsdamer-platz-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
 
 - title: Sleek & minimalist central Düsseldorf hotel
@@ -55,7 +45,7 @@
   price: 81
   price-description: per room per night
   saved: 46
-  expires: 2018/10/09
+  expires: 2018/10/16
   link: https://www.secretescapes.com/sleek-and-minimalist-central-dusseldorf-hotel-ruby-coco-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
 
 - title: 5* Dresden spa hotel with Michelin-starred dining
@@ -65,5 +55,5 @@
   price: 122
   price-description: per room per night
   saved: 45
-  expires: 2018/10/09
+  expires: 2018/10/16
   link: https://www.secretescapes.com/5-star-dresden-spa-hotel-with-michelin-starred-dining-buelow-palais-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
