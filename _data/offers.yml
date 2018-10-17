@@ -1,59 +1,47 @@
-- title: Design hotel stay in Stuttgart
-  id: design-hotel-stay-in-stuttgart
-  priority: high
-  location: Jaz Stuttgart, Germany
-  description: Sleek music-themed design hotel stay in the centre of Stuttgart – with breakfast and spa access
-  price: 99
-  price-description: per room per night
-  saved: 53
-  expires: 2018/10/16
-  link: https://www.secretescapes.com/design-hotel-stay-in-stuttgart-jaz-stuttgart-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
-
-- title: Sleek Hamburg stay at a brand-new design hotel
-  id: sleek-hamburg-stay-at-a-brand-new-design-hotel
-  location: TORTUE, Germany
-  description: A brand-new design hotel with sleek interiors and renowned dining on Hamburg’s grand boulevards – includes breakfast
-  price: 149
-  price-description: per room per night
-  saved: 31
-  expires: 2018/10/16
-  link: https://www.secretescapes.com/sleek-hamburg-stay-at-a-brand-new-design-hotel-tortue-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
-
-- title: Plush boutique hotel in Berlin's heart
-  id: plush-boutique-hotel-in-berlin-s-heart
-  location: Henri Hotel, Germany
-  description: A plush boutique stay in a Belle Epoque-style hotel, located on a renowned avenue in Berlin, including breakfast and thoughtful perks
-  price: 104
-  price-description: per room per night
-  saved: 50
-  expires: 2018/10/16
-  link: https://www.secretescapes.com/plush-boutique-hotel-in-berlins-heart-henri-hotel-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
-
-- title: Contemporary Berlin eco hotel stay
-  id: contemporary-berlin-eco-hotel-stay
-  location: Scandic Berlin Potsdamer Platz, Germany
-  description: Enjoy a modern stay in historic Berlin, just moments from iconic Potsdamer Platz, including breakfast
-  price: 87
-  price-description: per room per night
-  expires: 2018/10/16
-  link: https://www.secretescapes.com/contemporary-eco-hotel-in-the-heart-of-berlin-scandic-berlin-potsdamer-platz-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
-
-- title: Sleek & minimalist central Düsseldorf hotel
-  id: sleek-minimalist-central-dusseldorf-hotel
-  location: Ruby Coco, Germany
-  description: Explore Düsseldorf from an exclusive new Ruby Hotels outpost, situated in the heart of the city - includes breakfast
-  price: 81
-  price-description: per room per night
-  saved: 46
-  expires: 2018/10/16
-  link: https://www.secretescapes.com/sleek-and-minimalist-central-dusseldorf-hotel-ruby-coco-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
-
-- title: 5* Dresden spa hotel with Michelin-starred dining
-  id: dresden-spa-hotel-with-michelin-starred-dining
-  location: Bülow Palais, Germany
-  description: Stay at a stunning five-star property with a lavish spa and Michelin-starred restaurant in the historic heart of Dresden – includes gourmet breakfast and suite options
+- title: 5* Berlin spa hotel stay
+  id: five-star-berlin-spa-hotel-stay
+  location: The Westin Grand Berlin, Germany
+  description: A five-star hotel with luxury wellness facilities in the central Mitte district - includes breakfast, a souvenir piece of the Berlin Wall and an optional suite
   price: 122
   price-description: per room per night
-  saved: 45
-  expires: 2018/10/16
-  link: https://www.secretescapes.com/5-star-dresden-spa-hotel-with-michelin-starred-dining-buelow-palais-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=September2018
+  saved: 46
+  expires: 2018/10/23
+  link: https://www.secretescapes.com/5-star-berlin-spa-hotel-stay-with-suite-option-the-westin-grand-berlin-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=October2018
+
+- title: Hotel Berlin, Berlin
+  id: hotel-berlin-berlin
+  location: Berlin, Germany
+  description: A hip, stylish and playfully decorated hotel with a central location in Berlin's ultra-hip Mitte district - includes breakfast and wellness perks
+  price: 78
+  price-description: per room per night
+  expires: 2018/10/23
+  link: https://www.secretescapes.com/hotel-berlin-berlin-berlin-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=October2018
+
+- title: Provocateur Berlin
+  id: provocateur-berlin
+  location: Berlin, Germany
+  description: A city escape to a new boutique gem with seductive interiors, a slick bar and an innovative Chinese restaurant in West Berlin – breakfast package included, plus festive dates
+  price: 113
+  price-description: per room per night
+  saved: 35
+  expires: 2018/10/23
+  link: https://www.secretescapes.com/hotel-provocateur-berlin-berlin-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=October2018
+
+- title: Park Hyatt Hamburg
+  id: park-hyatt-hamburg
+  location: Hamburg, Germany
+  description: A decadent five-star Hamburg city escape to an award-winning Art Nouveau spa hotel, including breakfast, access to the wellness area and an optional suite
+  price: 157
+  price-description: per room per night
+  saved: 28
+  expires: 2018/10/23
+  link: https://www.secretescapes.com/park-hyatt-hamburg-hamburg-germany3/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=October2018
+
+- title: Hote Indigo Dusseldorf - Victoriaplatz
+  id: hote-indigo-dusseldorf-victoriaplatz
+  location: Dusseldorf, Germany
+  description: A sartorialist hotel in the heart of fashion-forward Dusseldorf, with breakfast, a welcome drink and more
+  price: 78
+  price-description: per room per night
+  expires: 2018/10/23
+  link: https://www.secretescapes.com/indigo-hotel-dusseldorf-victoriaplatz-duesseldorf-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=October2018
