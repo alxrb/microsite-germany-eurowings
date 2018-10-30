@@ -4,36 +4,8 @@
   description: A hip, stylish and playfully decorated hotel with a central location in Berlin's ultra-hip Mitte district - includes breakfast and wellness perks
   price: 39
   price-description: per person - based on 2 persons
-  expires: 2018/10/30
+  expires: 2018/11/06
   link: https://www.secretescapes.com/hotel-berlin-berlin-berlin-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=October2018
-
-- title: Provocateur Berlin
-  id: provocateur-berlin
-  location: Berlin, Germany
-  description: A city escape to a new boutique gem with seductive interiors, a slick bar and an innovative Chinese restaurant in West Berlin – breakfast package included, plus festive dates
-  price: 56
-  price-description: per person - based on 2 persons
-  saved: 35
-  expires: 2018/10/30
-  link: https://www.secretescapes.com/hotel-provocateur-berlin-berlin-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=October2018
-
-- title: Hote Indigo Dusseldorf - Victoriaplatz
-  id: hote-indigo-dusseldorf-victoriaplatz
-  location: Dusseldorf, Germany
-  description: A sartorialist hotel in the heart of fashion-forward Dusseldorf, with breakfast, a welcome drink and more
-  price: 39
-  price-description: per person - based on 2 persons
-  expires: 2018/10/30
-  link: https://www.secretescapes.com/indigo-hotel-dusseldorf-victoriaplatz-duesseldorf-germany/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=October2018
-
-- title: Hilton Dresden
-  id: hilton-dresden
-  location: Dresden, Germany
-  description: Enjoy contemporary city slicking in Germany's charming Dresden, including breakfast, wellness area access, dining discount and more, plus festive dates
-  price: 44
-  price-description: per person - based on 2 persons
-  expires: 2018/10/30
-  link: https://www.secretescapes.com/hilton-dresden-dresden-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=October2018
 
 - title: Living Hotel Prinzessin Elisabeth
   id: living-hotel-prinzessin-elisabeth
@@ -41,7 +13,7 @@
   description: Laid-back living at a modern Munich hotel near the River Isar, with breakfast plus luxurious apartment or penthouse suite options
   price: 42
   price-description: per person - based on 2 persons
-  expires: 2018/10/30
+  expires: 2018/11/06
   link: https://www.secretescapes.com/living-hotel-prinzessin-elisabeth-munich-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=October2018
 
 - title: Living Hotel Frankfurt
@@ -50,7 +22,7 @@
   description: Enjoy home-from-home vibes at a contemporary hotel in Frankfurt, close to the historic city centre, museums and river – includes breakfast
   price: 35
   price-description: per person - based on 2 persons
-  expires: 2018/10/30
+  expires: 2018/11/06
   link: https://www.secretescapes.com/living-hotel-frankfurt-frankfurt-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=October2018
 
 - title: Hotel Louis C. Jacob
@@ -59,5 +31,5 @@
   description: A five-star Hamburg hotel with a two Michelin-starred restaurant and riverside terrace - includes breakfast and charming perks
   price: 84
   price-description: per person - based on 2 persons
-  expires: 2018/10/30
+  expires: 2018/11/06
   link: https://www.secretescapes.com/hotel-louis-c-jacob-hamburg-germany/sale?utm_source=SE_Media&utm_medium=Stuttgart&utm_campaign=October2018
